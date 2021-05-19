@@ -1,0 +1,26 @@
+.nav li {
+  list-style-type: none;
+}
+
+.resources {
+  display: flex;
+  justify-content: flex-end;
+  width: 95vw;
+}
+
+.resources li {
+  margin-left: 1vw;
+}
+
+.nav {
+  display: flex;
+  min-height: 5vh;
+  height: 5vh;
+  width: 100vw;
+}
+
+.home {
+  width: 5vh;
+  display: flex;
+  justify-content: center;
+}
