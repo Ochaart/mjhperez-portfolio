@@ -5,7 +5,7 @@
 .resources {
   display: flex;
   justify-content: flex-end;
-  width: 95vw;
+  width: 93vw;
 }
 
 .resources li {
@@ -14,13 +14,22 @@
 
 .nav {
   display: flex;
-  min-height: 5vh;
-  height: 5vh;
-  width: 100vw;
+  /* min-height: 5vh;
+  height: 5vh; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding-top: 1vh;
+  /* background: white; */
 }
 
 .home {
-  width: 5vh;
+  width: 5vw;
   display: flex;
   justify-content: center;
+}
+
+.nav a:hover {
+  color: skyblue;
 }

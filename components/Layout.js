@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <>
     <Meta />
       <Nav />
-      <div className={styles.container}>
+      <div className={styles.container} id="carousel">
         <main className={styles.main}>
           {children}
         </main>
