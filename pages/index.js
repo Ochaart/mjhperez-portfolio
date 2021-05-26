@@ -10,49 +10,40 @@ import { motion, useAnimation } from 'framer-motion'
 // import { Fragment } from 'react'
 import useOnScreen from '../hooks/useOnScreen';
 import { InView } from 'react-intersection-observer';
-
+import Scroll from '../components/Scroll'
 
 
 export default function Home() {
-
-    const animation = useAnimation();
-
-  const variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  }
-
-  return (
-    <div className={homeStyles.container}>
-      <InView threshold={1}>
-        {({ inView, ref }) => (
-          <div ref={ref}>
-          <motion.section className={`${homeStyles.welcome} welcome`}
-             animate={inView? "visible" : "hidden"}
-             variants={variants}
-          >
-            <motion.h1
-              animate={inView? {x: 100} : {x: 300}}>Hi I'm Mikey!</motion.h1>
-            <p>{inView ? 'is visible' : 'not visible'}</p>
-          </motion.section>
-          </div>
-        )}
-      </InView>
-      <InView threshold={.75}>
-        {({ inView, ref }) => (
-          <div ref={ref}>
-          <motion.section className={`${homeStyles.welcome} welcome`}
-             animate={inView? "visible" : "hidden"}
-             variants={variants}
-          >
-            <h1>Hi I'm Mikey!</h1>
-            <p>{inView ? 'is visible' : 'not visible'}</p>
-          </motion.section>
-          </div>
-        )}
-      </InView>
-    </div>
-  )
+    // const animation = useAnimation();
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
+    return (
+        <div className={homeStyles.container}>
+            <InView threshold={1}>
+                {({ inView, ref }) => (
+                    <section ref={ref} className={`${homeStyles.welcome} welcome`}>
+                        <motion.h1
+                            initial="hidden"
+                            animate="visible"
+                            variants={variants}>Welcome
+                        </motion.h1>
+                        <p>{inView ? 'is visible' : 'not visible'}</p>
+                        <Scroll inView={inView}/>
+                    </section>
+                )}
+            </InView>
+            <InView threshold={.75}>
+                {({ inView, ref }) => (
+                    <section ref={ref} className={`${homeStyles.welcome} welcome`}>
+                        <h1>Hi I'm Mikey!</h1>
+                        <p>{inView ? 'is visible' : 'not visible'}</p>
+                    </section>
+                )}
+            </InView>
+        </div>
+    )
 }
  // useEffect(() => {
   //   let divs = [...document.querySelectorAll('.watch')];

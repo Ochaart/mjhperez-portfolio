@@ -1,0 +1,27 @@
+
+.scrollWrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 1;
+}
+.scrollWrapper p {
+  font-size: 0.7rem;
+  line-height: 2rem;
+  letter-spacing: -.025rem;
+  text-transform: uppercase;
+}
+
+.mouse {
+  margin: 0 auto;
+  /* background: #ff6a00 linear-gradient(transparent, transparent 50%, #ee0979 0, #ee0979); */
+  position: relative;
+  width: 1.2rem;
+  height: 1.8rem;
+  border-radius: 10rem;
+  /* background-size: 225%; */
+  border: 1px solid #000;
+  /* animation: c 5s linear infinite, e 5s ease-out infinite; */
+}
