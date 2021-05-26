@@ -3,11 +3,17 @@ import styles from '../styles/Scroll.module.css'
 import { motion } from 'framer-motion'
 
 const Scroll = ({ inView }) => {
-  const variants = {
-    start: { y: -10, opacity: [0,0] },
-    end: { y: 0, opacity: [1, 1, 1, 0, 0, 0] },
+  const dotVariants = {
+    start: {
+      y: -10,
+      opacity: [0,0],
+     },
+    end: {
+      y: 0,
+      opacity: [1, 1, 1, 0, 0, 0],
+    },
   }
-  const variants2 = {
+  const mouseVariants = {
     start: { y: 0 },
     end: { y: 5 },
   }
@@ -17,15 +23,13 @@ const Scroll = ({ inView }) => {
       animate={inView ? {opacity: 1} : {opacity: 0}}
       className={styles.scrollWrapper}>
       <motion.div
-        variants={variants2}
+        variants={mouseVariants}
         initial="start"
         animate="end"
         transition={{ yoyo: 'Infinity', duration: 1 }}
         className={styles.mouse}>
         <motion.p
-          variants={variants}
-          initial="start"
-          animate="end"
+          variants={dotVariants}
           transition={{ yoyo: 'Infinity', duration: 1 }}
         >.</motion.p>
       </motion.div>
