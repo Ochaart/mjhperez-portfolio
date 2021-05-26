@@ -1,20 +1,45 @@
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
 import { motion } from 'framer-motion'
+import React, { useState, useEffect } from 'react'
 
-const navigationVariants = {
+let navigationVariants = {
   start: {
     y: 0,
-    background: "none"
+    background: "none",
+    opacity: [0,1],
+    transition: {
+      duration: 1,
+    }
   },
   end: {
-    y: "-2vh",
+    y: "-3vh",
     type: "spring",
     stiffness: 150,
     background: "#FFFFFF",
+    paddingBottom: "3vh",
+    opacity: 1,
+    transition: {
+      duration: .5,
+    }
   }
 }
 const Nav = ({ inView }) => {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    setCount(count+1)
+    if (count > 1) {
+      navigationVariants = {
+        ...navigationVariants,
+        start: {
+          y: 0,
+          background: "none",
+          opacity: 1,
+        },
+      }
+    }
+  }, [inView])
+
   return (
     <motion.nav
       variants={navigationVariants}

@@ -2,7 +2,7 @@
 .scrollWrapper {
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 0.5%;
   transform: translateX(-50%);
   text-align: center;
   opacity: 1;

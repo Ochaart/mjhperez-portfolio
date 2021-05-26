@@ -1,0 +1,15 @@
+
+.verticalLine {
+  border-left: 2px solid #000;
+}
+
+.verticalLineContainer {
+  position: absolute;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  left: 50%;
+  top: 15%;
+}
