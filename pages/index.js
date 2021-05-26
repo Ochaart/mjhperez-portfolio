@@ -1,42 +1,43 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import homeStyles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 import Details from '../components/Details';
-import observer from '../hooks/observer'
+import Nav from '../components/Nav';
 import React, { useEffect, useState, useRef } from 'react'
 import { motion, useAnimation } from 'framer-motion'
-// import { useInView } from 'react-intersection-observer';
-// import observer2 from '../hooks/observer2';
-// import { Fragment } from 'react'
 import useOnScreen from '../hooks/useOnScreen';
 import { InView } from 'react-intersection-observer';
 import Scroll from '../components/Scroll'
+import ParticleBackground from '../components/ParticleBackground';
 
+const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+}
 
 export default function Home() {
-    // const animation = useAnimation();
-    const variants = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
-    }
     return (
-        <div className={homeStyles.container}>
+        <div className={styles.container}>
             <InView threshold={1}>
-                {({ inView, ref }) => (
-                    <section ref={ref} className={`${homeStyles.welcome} welcome`}>
+                {({ inView, ref, entry }) => (
+                    <>
+                    <section ref={ref} className={styles.welcome}>
+                    <ParticleBackground/>
+                    <Nav inView={inView} />
                         <motion.h1
                             initial="hidden"
                             animate="visible"
-                            variants={variants}>Welcome
-                        </motion.h1>
+                            variants={variants}>
+                        Welcome</motion.h1>
                         <p>{inView ? 'is visible' : 'not visible'}</p>
-                        <Scroll inView={inView}/>
+                        <Scroll inView={inView} />
                     </section>
+                    </>
                 )}
             </InView>
             <InView threshold={.75}>
                 {({ inView, ref }) => (
-                    <section ref={ref} className={`${homeStyles.welcome} welcome`}>
+                    <section ref={ref} className={`${styles.welcome} welcome`}>
                         <h1>Hi I'm Mikey!</h1>
                         <p>{inView ? 'is visible' : 'not visible'}</p>
                     </section>

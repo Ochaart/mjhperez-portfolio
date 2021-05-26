@@ -1,9 +1,23 @@
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
+import { motion } from 'framer-motion'
 
-const Nav = () => {
+const navigationVariants = {
+  start: {
+    y: 0
+  },
+  end: {
+    y: "-2vh",
+    type: "spring",
+    stiffness: 150
+  }
+}
+const Nav = ({ inView }) => {
   return (
-    <nav className={navStyles.nav}>
+    <motion.nav
+      variants={navigationVariants}
+      animate={inView ? "start" : "end" }
+      className={navStyles.nav}>
       <ul className={navStyles.home}>
         <li>
           <Link href='/'>
@@ -28,7 +42,7 @@ const Nav = () => {
           </Link>
         </li>
       </ul>
-    </nav>
+    </motion.nav>
   )
 }
 

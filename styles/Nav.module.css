@@ -6,6 +6,7 @@
   display: flex;
   justify-content: flex-end;
   width: 93vw;
+  padding-right: 2vw;
 }
 
 .resources li {
@@ -14,20 +15,21 @@
 
 .nav {
   display: flex;
-  /* min-height: 5vh;
-  height: 5vh; */
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
-  padding-top: 1vh;
-  /* background: white; */
+  padding-top: 4.5vh;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-family: Cerebri,Helvetica,Arial,sans-serif;
 }
 
 .home {
   width: 5vw;
   display: flex;
   justify-content: center;
+  padding-left: 2vw;
 }
 
 .nav a:hover {
