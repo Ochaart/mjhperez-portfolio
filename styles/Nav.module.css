@@ -15,7 +15,7 @@
 
 .nav {
   display: flex;
-  width: 100%;
+  width: 99%;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -23,6 +23,7 @@
   text-transform: uppercase;
   font-size: .8rem;
   font-family: Cerebri,Helvetica,Arial,sans-serif;
+
 }
 
 .home {

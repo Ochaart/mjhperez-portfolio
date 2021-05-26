@@ -11,7 +11,7 @@ const navigationVariants = {
     y: "-2vh",
     type: "spring",
     stiffness: 150,
-    background: "#FFFFFF"
+    background: "#FFFFFF",
   }
 }
 const Nav = ({ inView }) => {
