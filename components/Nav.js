@@ -4,12 +4,14 @@ import { motion } from 'framer-motion'
 
 const navigationVariants = {
   start: {
-    y: 0
+    y: 0,
+    background: "none"
   },
   end: {
     y: "-2vh",
     type: "spring",
-    stiffness: 150
+    stiffness: 150,
+    background: "#FFFFFF"
   }
 }
 const Nav = ({ inView }) => {
