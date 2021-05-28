@@ -14,6 +14,7 @@ import VerticalLine from '../components/VerticalLine';
 import Hello from '../components/Hello'
 import Window from '../components/Window'
 import SocialMedia from '../components/SocialMedia'
+import TechStack from '../components/TechStack'
 
 export default function Home() {
     return (
@@ -29,6 +30,7 @@ export default function Home() {
                         <Hello />
                         <Window />
                         <SocialMedia />
+                        <TechStack />
                         {/* <p>{inView ? 'is visible' : 'not visible'}</p> */}
                         <Scroll inView={inView} />
                     </section>

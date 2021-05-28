@@ -1,0 +1,8 @@
+.techStack {
+  display: flex;
+  position: absolute;
+  top: 54vh;
+  left: 20.2vw;
+  justify-content: center;
+  align-items: center;
+}

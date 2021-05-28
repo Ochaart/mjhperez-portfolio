@@ -13,7 +13,6 @@ const socialMediaVariants = {
     opacity: 1,
     transition: {
       duration: 1,
-      // delay: 1
     }
   }
 }
