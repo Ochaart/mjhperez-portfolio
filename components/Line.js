@@ -14,7 +14,7 @@ const lineVariants = {
       // paddingLeft: "2.5vw",
       transition: {
           delay: 2.2,
-          duration: .3,
+          duration: .2,
       }
   },
 }

@@ -1,8 +1,8 @@
 
 .scrollWrapper {
   position: absolute;
-  left: 50%;
-  bottom: 0.5%;
+  left: 49.7vw;
+  bottom: 0.5vh;
   transform: translateX(-50%);
   text-align: center;
   opacity: 1;

@@ -1,0 +1,21 @@
+.container {
+  position: absolute;
+  overflow: hidden;
+  top: 50vh;
+  left: 19vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* background: gray; */
+  height: 25vh;
+  width: 25vw;
+}
+
+.window {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  height: 25vh;
+}
+
+

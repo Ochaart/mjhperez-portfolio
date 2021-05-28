@@ -1,0 +1,10 @@
+.container {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 82vh;
+  left: 3vw;
+  height: 15vh;
+}
