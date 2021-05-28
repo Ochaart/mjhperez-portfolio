@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/Window.module.css';
-import Image from 'next/image';
 
 const windowVariants = {
   start: {
@@ -20,12 +19,9 @@ const windowVariants = {
   }
 }
 
-const Window = () => {
+const Window = ({ children }) => {
   return (
     <motion.div
-      // variants={windowVariants}
-      // initial="start"
-      // animate="end"
       className={styles.container}
     >
       <motion.div
@@ -34,6 +30,7 @@ const Window = () => {
         animate="end"
         className={styles.window}
       >
+        { children }
       </motion.div>
     </motion.div>
   )

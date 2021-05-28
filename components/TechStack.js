@@ -25,7 +25,7 @@ const TechStack = () => {
       className={styles.techStack}>
       <Tech src="/react.png" height="100vh" width="140vw" alt="JavaScript CSS HTML"/>
       <Tech src="/trio.png" height="150vh" width="150vw" alt="JavaScript CSS HTML"/>
-      <Tech src="/nodejs.png" height="100vh" width="100vw" alt="JavaScript CSS HTML" paddingLeft="1vw"/>
+      <Tech src="/nodejs.png" height="100vh" width="100vw" alt="JavaScript CSS HTML" paddingLeft="1vw" paddingRight="1.2vw"/>
     </motion.div>
   )
 }

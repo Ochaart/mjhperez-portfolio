@@ -1,0 +1,7 @@
+.more {
+  position: absolute;
+  top: 70vh;
+  left: 35vw;
+  cursor: pointer;
+  color: #d3d3d3;
+}
