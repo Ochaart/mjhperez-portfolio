@@ -9,7 +9,7 @@ const helloVariants = {
   },
   end: {
     opacity: 1,
-    x: 5,
+    x: 80,
     width: "35vw",
     color: ["#ff0000","#FFD700","#d3d3d3"],
     boxShadow: "0 2px 7px 1px rgba(31,31,31,. 0.2)",

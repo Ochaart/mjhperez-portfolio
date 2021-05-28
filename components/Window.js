@@ -4,11 +4,9 @@ import styles from '../styles/Window.module.css';
 
 const windowVariants = {
   start: {
-    // height: 0,
     width: 0,
   },
   end: {
-    // height: "25vh",
     width: "5vw",
     borderTop: "2px solid #000",
     borderBottom: "2px solid #000",
