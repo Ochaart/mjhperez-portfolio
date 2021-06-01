@@ -9,27 +9,34 @@ const helloVariants = {
   },
   end: {
     opacity: 1,
-    x: 80,
+    x: 85,
     width: "35vw",
-    color: ["#ff0000","#FFD700","#d3d3d3"],
-    boxShadow: "0 2px 7px 1px rgba(31,31,31,. 0.2)",
+    color: ["#ff0000", "#FFD700", "#d3d3d3", "#FFA500"],
     transition: {
-      duration: .3,
-      delay: 1.2
+      duration: .8,
+      delay: 1
     }
   }
 }
 
 const Hello = () => {
   return (
-    <motion.div
-      variants={helloVariants}
-      initial="start"
-      animate="end"
-      className={styles.hello}
-    >
-      H E L L O
+    <>
+      <div className={styles.box}>
+
+        <div className={styles.cover}>
+        </div>
+      </div>
+
+      <motion.div
+        variants={helloVariants}
+        initial="start"
+        animate="end"
+        className={styles.hello}
+      >
+        H E L L O
     </motion.div>
+    </>
   )
 }
 

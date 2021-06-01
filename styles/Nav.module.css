@@ -1,5 +1,6 @@
 .nav li {
   list-style-type: none;
+
 }
 
 .resources {
@@ -15,14 +16,20 @@
 
 .nav {
   display: flex;
-  width: 99%;
+  width: 99vw;
   position: fixed;
   top: 0;
   z-index: 1;
-  padding-top: 4.5vh;
+  padding-top: 2vh;
   text-transform: uppercase;
   font-size: .8rem;
   font-family: Cerebri,Helvetica,Arial,sans-serif;
+  /* color:#000; */
+
+}
+
+.man {
+  padding-left: .3vw;
 }
 
 .home {

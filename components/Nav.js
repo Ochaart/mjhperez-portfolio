@@ -1,23 +1,26 @@
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import React, { useState, useEffect } from 'react'
 
 let navigationVariants = {
   start: {
-    y: 0,
-    background: "none",
-    opacity: [0,1],
+    // y: 0,
+    background: "#FFFFFF",
+    boxShadow: "-0.5px 2px 7px 2px #ededed",
+    opacity: [0, 1],
     transition: {
       duration: 1,
     }
   },
   end: {
-    y: "-3vh",
+    y: "-1vh",
     type: "spring",
     stiffness: 150,
     background: "#FFFFFF",
-    paddingBottom: "3vh",
+    boxShadow: "-0.5px 2px 7px 2px #ededed",
+    paddingBottom: "1vh",
     opacity: 1,
     transition: {
       duration: .5,
@@ -27,14 +30,15 @@ let navigationVariants = {
 const Nav = ({ inView }) => {
   const [count, setCount] = useState(0);
   useEffect(() => {
-    setCount(count+1)
+    setCount(count + 1)
     if (count > 1) {
       navigationVariants = {
         ...navigationVariants,
         start: {
-          y: 0,
-          background: "none",
+          // y: 0,
+          background: "#FFFFFF",
           opacity: 1,
+          boxShadow: "-0.5px 2px 7px 2px #ededed",
         },
       }
     }
@@ -43,13 +47,20 @@ const Nav = ({ inView }) => {
   return (
     <motion.nav
       variants={navigationVariants}
-      animate={inView ? "start" : "end" }
+      animate={inView ? "start" : "end"}
       className={navStyles.nav}>
       <ul className={navStyles.home}>
         <li>
           <Link href='/'>
             <a>Home</a>
           </Link>
+          <div className={navStyles.man}>
+            <Image
+              src="/jumpingMan.png"
+              width={20}
+              height={20}
+            />
+          </div>
         </li>
       </ul>
       <ul className={navStyles.resources}>

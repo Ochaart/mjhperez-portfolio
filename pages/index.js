@@ -1,52 +1,15 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { motion, useAnimation } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Details from '../components/Details';
-import Nav from '../components/Nav';
-import Scroll from '../components/Scroll'
-import ParticleBackground from '../components/ParticleBackground';
-import Welcome from '../components/Welcome';
-import Line from '../components/Line';
-import VerticalLine from '../components/VerticalLine';
-import Hello from '../components/Hello'
-import Window from '../components/Window'
-import SocialMedia from '../components/SocialMedia'
-import TechStack from '../components/TechStack'
-import More from '../components/More'
+import Landing from '../components/Landing'
+import Projects from '../components/Projects'
 
 export default function Home() {
     return (
         <div className={styles.screen}>
-            <InView threshold={1}>
-                {({ inView, ref, entry }) => (
-                    <section ref={ref} className={styles.container}>
-                        <ParticleBackground />
-                        <Nav inView={inView} />
-                        <Welcome />
-                        <Line />
-                        <VerticalLine />
-                        <Hello />
-                        <Window>
-                        <TechStack />
-                        </Window>
-                        <More />
-                        <SocialMedia />
-                        {/* <p>{inView ? 'is visible' : 'not visible'}</p> */}
-                        <Scroll inView={inView} />
-                    </section>
-                )}
-            </InView>
-            <InView threshold={.50}>
-                {({ inView, ref }) => (
-                    <section ref={ref} className={styles.summary}>
-                        {/* <h1>Hi I'm Mikey!</h1> */}
-                        <p>{inView ? 'is visible' : 'not visible'}</p>
-                    </section>
-                )}
-            </InView>
+            <Landing />
+            <Projects />
         </div>
     )
 }

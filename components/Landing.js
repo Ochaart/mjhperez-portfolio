@@ -2,18 +2,19 @@ import React from 'react'
 import { motion, useAnimation } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import styles from '../styles/Home.module.css'
-import Details from '../components/Details';
-import Nav from '../components/Nav';
-import Scroll from '../components/Scroll'
-import ParticleBackground from '../components/ParticleBackground';
-import Welcome from '../components/Welcome';
-import Line from '../components/Line';
-import VerticalLine from '../components/VerticalLine';
-import Hello from '../components/Hello'
-import Window from '../components/Window'
-import SocialMedia from '../components/SocialMedia'
-import TechStack from '../components/TechStack'
-import More from '../components/More'
+import Nav from './Nav';
+import Scroll from './Scroll'
+import ParticleBackground from './ParticleBackground';
+import Welcome from './Welcome';
+import Line from './Line';
+import VerticalLine from './VerticalLine';
+import Hello from './Hello'
+import Window from './Window'
+import SocialMedia from './SocialMedia'
+import TechStack from './TechStack'
+import More from './More'
+import LandingPhoto from './LandingPhoto'
+import LandingPhoto2 from './LandingPhoto2'
 
 const Landing = () => {
   return (
@@ -21,16 +22,18 @@ const Landing = () => {
       {({ inView, ref, entry }) => (
         <section ref={ref} className={styles.container}>
           <ParticleBackground />
+          <LandingPhoto />
+          {/* <LandingPhoto2 /> */}
           <Nav inView={inView} />
-          <Welcome inView={inView} />
-          <Line inView={inView} />
-          <VerticalLine inView={inView} />
-          <Hello inView={inView} />
-          <Window inView={inView} >
+          <Welcome />
+          <Line />
+          {/* <VerticalLine /> */}
+          <Hello />
+          <Window>
             <TechStack />
           </Window>
-          <More inView={inView} />
-          <SocialMedia inView={inView }/>
+          <More />
+          <SocialMedia />
           <Scroll inView={inView} />
         </section>
       )}

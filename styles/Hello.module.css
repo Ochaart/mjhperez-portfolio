@@ -10,3 +10,26 @@
   height: 20vh;
   /* box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 13%); */
 }
+
+.box {
+  height: 60vh;
+  width: 45vw;
+  background: #000;
+  position: absolute;
+  top: 20.5vh;
+  left: 50vw;
+  z-index: -1;
+  box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 18%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cover {
+  height: 56vh;
+  width: 43vw;
+  background: #FFFFFF;
+  z-index: 1;
+  box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 18%);
+}

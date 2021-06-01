@@ -8,10 +8,10 @@ const windowVariants = {
   },
   end: {
     width: "5vw",
-    borderTop: "2px solid #000",
-    borderBottom: "2px solid #000",
+    borderTop: "2px solid #d3d3d3",
+    borderBottom: "2px solid #d3d3d3",
     transition: {
-      delay: 2,
+      delay: 2.2,
       duration: .5
     }
   }
