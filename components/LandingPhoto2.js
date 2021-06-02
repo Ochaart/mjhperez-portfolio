@@ -7,10 +7,10 @@ const LandingPhoto2 = ({ image }) => {
   const photoVariants = {
     start: {
       opacity: 0,
-      y: 10
+      // y: 10
     },
     end: {
-      y: 0,
+      // y: 0,
       opacity: 1,
       transition: {
         duration: 1,
@@ -26,7 +26,7 @@ const LandingPhoto2 = ({ image }) => {
       animate="end"
       className={styles.landingPhoto2}>
       <Image
-        src="/cinqueTerra.jpeg"
+        src="/desk.png"
         layout="fill"
       />
     </motion.div>

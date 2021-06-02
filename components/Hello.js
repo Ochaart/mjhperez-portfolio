@@ -16,18 +16,55 @@ const helloVariants = {
       duration: .8,
       delay: 1
     }
+  },
+}
+
+const tvVariants = {
+  start: {
+    opacity: 0,
+    // width: 0,
+    // height: 0,
+  },
+  end: {
+    opacity: 1,
+    // width: "45vw",
+    // height: "60vh",
+    transition: {
+      duration: .8,
+    }
+  }
+}
+
+const innerTvVariants = {
+  start: {
+    opacity: 0,
+    width: 0,
+    height: 0,
+  },
+  end: {
+    opacity: 1,
+    width: "43vw",
+    height: "56vh",
+    transition: {
+      duration: .2,
+    }
   }
 }
 
 const Hello = () => {
   return (
     <>
-      <div className={styles.box}>
-
-        <div className={styles.cover}>
-        </div>
-      </div>
-
+      <motion.div
+        variants={tvVariants}
+        initial="start"
+        animate="end"
+        className={styles.box}>
+        <motion.div
+          variants={innerTvVariants}
+          initial="start"
+          animate="end"
+          className={styles.cover} />
+      </motion.div>
       <motion.div
         variants={helloVariants}
         initial="start"

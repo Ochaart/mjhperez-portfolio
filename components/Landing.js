@@ -23,7 +23,7 @@ const Landing = () => {
         <section ref={ref} className={styles.container}>
           <ParticleBackground />
           <LandingPhoto />
-          {/* <LandingPhoto2 /> */}
+          <LandingPhoto2 />
           <Nav inView={inView} />
           <Welcome />
           <Line />
@@ -32,7 +32,7 @@ const Landing = () => {
           <Window>
             <TechStack />
           </Window>
-          <More />
+          {/* <More /> */}
           <SocialMedia />
           <Scroll inView={inView} />
         </section>
