@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react'
 
 let navigationVariants = {
   start: {
-    // y: 0,
+    y: 0,
     background: "#FFFFFF",
     boxShadow: "-0.5px 2px 7px 2px #ededed",
     opacity: [0, 1],
@@ -16,8 +16,6 @@ let navigationVariants = {
   },
   end: {
     y: "-1vh",
-    type: "spring",
-    stiffness: 150,
     background: "#FFFFFF",
     boxShadow: "-0.5px 2px 7px 2px #ededed",
     paddingBottom: "1vh",

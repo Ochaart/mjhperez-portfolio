@@ -45,4 +45,16 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  /* word-wrap: none; */
+}
+
+.title {
+  position: absolute;
+  z-index: 1;
+  left: 42%;
+  top: 10%;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
