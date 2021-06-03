@@ -1,9 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import styles from '../styles/LandingPhoto.module.css'
+import styles from '../styles/SanFrancisco.module.css'
 
-const LandingPhoto = ({ image }) => {
+const SanFrancisco = ({ image }) => {
   const photoVariants = {
     start: {
       opacity: 0,
@@ -24,7 +24,7 @@ const LandingPhoto = ({ image }) => {
       variants={photoVariants}
       initial="start"
       animate="end"
-      className={styles.landingPhoto}>
+      className={styles.sanFrancisco}>
       <Image
         src="/sanfrancisco.png"
         layout="fill"
@@ -33,4 +33,4 @@ const LandingPhoto = ({ image }) => {
   )
 }
 
-export default LandingPhoto
+export default SanFrancisco

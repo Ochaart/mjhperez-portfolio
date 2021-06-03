@@ -9,7 +9,7 @@ const helloVariants = {
   },
   end: {
     opacity: 1,
-    x: 85,
+    x: 100,
     width: "35vw",
     color: ["#ff0000", "#FFD700", "#d3d3d3", "#FFA500"],
     transition: {

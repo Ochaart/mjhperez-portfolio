@@ -1,6 +1,17 @@
-.techStack {
+.techStackContainer {
+  position: absolute;
+  top: 55vh;
+  left: 22.5vw;
+  width: 11vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+}
+.react {
+  width: 5vw;
+  height: 8vh;
+  position: relative;
+}
+.jhc {
+  width: 5vw;
+  height: 8vh;
+  position: relative;
 }

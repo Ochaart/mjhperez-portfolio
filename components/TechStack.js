@@ -1,7 +1,7 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import Tech from './Tech'
-import styles from '../styles/TechStack.module.css'
+import React from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import styles from '../styles/TechStack.module.css';
 
 const techStackVariants = {
   start: {
@@ -22,10 +22,14 @@ const TechStack = () => {
       variants={techStackVariants}
       initial="start"
       animate="end"
-      className={styles.techStack}>
-      <Tech src="/react.png" height="100vh" width="140vw" alt="JavaScript CSS HTML"/>
-      <Tech src="/trio.png" height="150vh" width="150vw" alt="JavaScript CSS HTML"/>
-      <Tech src="/nodejs.png" height="100vh" width="100vw" alt="JavaScript CSS HTML" paddingLeft="1vw" paddingRight="1.2vw"/>
+      className={styles.techStackContainer}>
+        <div className={styles.react}>
+          <Image src="/react.png" layout="fill" alt="React" />
+        </div>
+        <div className={styles.jhc}>
+          <Image src="/trio.png" layout="fill" alt="JavaScript CSS HTML" />
+        </div>
+      {/* <Tech src="/nodejs.png" height="50vh" width="50vw" alt="JavaScript CSS HTML" paddingLeft="1vw" paddingRight="1.2vw"/> */}
     </motion.div>
   )
 }

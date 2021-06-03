@@ -1,9 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import styles from '../styles/LandingPhoto2.module.css'
+import styles from '../styles/DeskPhoto.module.css'
 
-const LandingPhoto2 = ({ image }) => {
+const DeskPhoto = () => {
   const photoVariants = {
     start: {
       opacity: 0,
@@ -24,7 +24,7 @@ const LandingPhoto2 = ({ image }) => {
       variants={photoVariants}
       initial="start"
       animate="end"
-      className={styles.landingPhoto2}>
+      className={styles.deskPhoto}>
       <Image
         src="/desk.png"
         layout="fill"
@@ -33,4 +33,4 @@ const LandingPhoto2 = ({ image }) => {
   )
 }
 
-export default LandingPhoto2
+export default DeskPhoto

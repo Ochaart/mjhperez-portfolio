@@ -13,8 +13,8 @@ import Window from './Window'
 import SocialMedia from './SocialMedia'
 import TechStack from './TechStack'
 import More from './More'
-import LandingPhoto from './LandingPhoto'
-import LandingPhoto2 from './LandingPhoto2'
+import SanFrancisco from './SanFrancisco'
+import DeskPhoto from './DeskPhoto'
 
 const Landing = () => {
   return (
@@ -22,17 +22,13 @@ const Landing = () => {
       {({ inView, ref, entry }) => (
         <section ref={ref} className={styles.container}>
           <ParticleBackground />
-          <LandingPhoto />
-          <LandingPhoto2 />
+          <SanFrancisco />
+          <DeskPhoto />
           <Nav inView={inView} />
           <Welcome />
           <Line />
-          {/* <VerticalLine /> */}
           <Hello />
-          <Window>
-            <TechStack />
-          </Window>
-          {/* <More /> */}
+          <TechStack />
           <SocialMedia />
           <Scroll inView={inView} />
         </section>

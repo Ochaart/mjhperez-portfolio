@@ -1,6 +1,6 @@
 .hello {
   position: absolute;
-  top: 40vh;
+  top: 33vh;
   left: 50vw;
   color: #d3d3d3;
   font-size: 10rem;
@@ -16,7 +16,7 @@
   width: 45vw;
   background: #000;
   position: absolute;
-  top: 20.5vh;
+  top: 14vh;
   left: 50vw;
   z-index: -1;
   box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 18%);

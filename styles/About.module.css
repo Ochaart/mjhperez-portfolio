@@ -1,0 +1,48 @@
+.about {
+  position: relative;
+}
+
+.profileContainer {
+  height: 60vh;
+  width: 23vw;
+  position: absolute;
+  left: 63vw;
+  top: 15vh;
+}
+
+.imageContainer {
+  height: 60vh;
+  width: 23vw;
+  position: absolute;
+  overflow: hidden;
+  background: black;
+}
+
+.profileCover {
+  background: #FFA500;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.summaryContainer {
+  position: absolute;
+  height: 60vh;
+  width: 50vw;
+  top: 25vh;
+  left: 14vw;
+}
+
+.summaryCover {
+  background: #FFA500;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.summary {
+  background: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

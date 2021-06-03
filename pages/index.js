@@ -4,11 +4,13 @@ import { InView } from 'react-intersection-observer';
 import styles from '../styles/Home.module.css'
 import Landing from '../components/Landing'
 import Projects from '../components/Projects'
+import About from '../components/About'
 
 export default function Home() {
     return (
         <div className={styles.screen}>
             <Landing />
+            <About />
             <Projects />
         </div>
     )
