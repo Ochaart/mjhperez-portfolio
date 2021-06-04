@@ -1,0 +1,22 @@
+.container {
+  height: 45vh;
+  width: 24vw;
+  position: absolute;
+  top: 30vh;
+  left: 34vw;
+  box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 20%);
+  /* border: 5px solid #000; */
+}
+.container2 {
+  height: 40vh;
+  width: 32vw;
+  position: absolute;
+  top: 30vh;
+  left: 34vw;
+  box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 20%);
+  border: 5px solid #FFFFFF;
+}
+
+.projects {
+  position: relative;
+}

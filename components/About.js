@@ -3,6 +3,8 @@ import { motion, useAnimation } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import styles from '../styles/About.module.css';
 import Image from 'next/image'
+import Line from './Line';
+import ParticleBackground from './ParticleBackground';
 
 const profilePicVariants = {
   start: {
@@ -77,6 +79,7 @@ const summaryVariants = {
 const About = () => {
   return (
     <section className={styles.about}>
+      <ParticleBackground />
       <InView threshold={.5} triggerOnce={true}>
         {({ inView, ref }) => (
           <div ref={ref} className={styles.profileContainer}>
@@ -101,7 +104,7 @@ const About = () => {
           </div>
         )}
       </InView>
-      <InView threshold={.3} triggerOnce={true}>
+      <InView threshold={.35} triggerOnce={true}>
         {({ inView, ref }) => {
           return (
             <div ref={ref} className={styles.summaryContainer}>
@@ -118,7 +121,7 @@ const About = () => {
                 animate={inView ? "end" : "start"}
               >
                 <p>
-                  My Background is in the Hospitality Industry. I've always enjoyed traveling the world and meeting people. I thrive in the social and team environments.
+                  My background is in the Hospitality Industry. I've always enjoyed traveling the world and meeting people. I thrive in the social and team environments.
                </p>
                 <br />
                 <p>
@@ -151,13 +154,13 @@ const About = () => {
                   Back End
                 </p>
                 <p>
-                  MySQL | MongoDB | Mongoose | Node.js | Express | PostgreSQL | REST API | Nginx
+                  MySQL | MongoDB | Mongoose | Node.js | Express | Axios | PostgreSQL | REST API | Nginx
                 </p>
                 <p>
                   DevOps &amp; Testing
                 </p>
                 <p>
-                  AWS EC2 | S3 | Docker | Git | Axios | Babel | Webpack | Jest | Enzyme | Mocha | Chai | Loader.io | K6 | New Relic
+                  AWS EC2 | S3 | Docker | Git | Babel | Webpack | Jest | Enzyme | Mocha | Chai | Loader.io | K6 | New Relic
                 </p>
               </motion.div>
               <motion.div className={styles.summaryCover}

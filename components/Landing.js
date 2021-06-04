@@ -31,7 +31,6 @@ const Landing = () => {
           <Hello />
           <TechStack />
           <SocialMedia />
-          {/* <Shelf /> */}
           <Scroll inView={inView} />
         </section>
       )}
