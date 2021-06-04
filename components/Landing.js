@@ -15,6 +15,7 @@ import TechStack from './TechStack'
 import More from './More'
 import SanFrancisco from './SanFrancisco'
 import DeskPhoto from './DeskPhoto'
+import Shelf from './Shelf'
 
 const Landing = () => {
   return (
@@ -30,6 +31,7 @@ const Landing = () => {
           <Hello />
           <TechStack />
           <SocialMedia />
+          {/* <Shelf /> */}
           <Scroll inView={inView} />
         </section>
       )}
