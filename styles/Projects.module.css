@@ -1,9 +1,4 @@
-.container {
-  height: 45vh;
-  width: 26vw;
-  position: absolute;
-  top: 30vh;
-  left: 34vw;
+.container, .container1, .container2 {
   box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 20%);
   z-index: 1;
   overflow: hidden;
@@ -11,45 +6,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+}
+
+.container {
+  height: 45vh;
+  width: 26vw;
+  top: 30vh;
+  left: 34vw;
 }
 .container1 {
   height: 40vh;
   width: 30vw;
-  position: absolute;
   top: 30vh;
   left: 34vw;
-  box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 20%);
-  z-index: 1;
-  overflow: hidden;
-  border: 10px solid transparent;
 }
 .container2 {
   height: 40vh;
   width: 32vw;
-  position: absolute;
   top: 30vh;
   left: 34vw;
-  box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 20%);
-  overflow: hidden;
-  border: 10px solid transparent;
 }
 
 .coverPage {
   height: 100%;
   width: 100%;
-  /* opacity: 1; */
   z-index: 2;
   position: absolute;
 }
 
-.catWalkTitle {
+.coverTitle {
   position: absolute;
   color: #ffffff;
   text-align: center;
   font-size: 1.1rem;
   z-index: 1;
 }
-.catWalkTitle p:nth-child(2){
+
+.coverTitle p:nth-child(2){
   font-size: .7rem;
   line-height: 1.3rem;
 }
