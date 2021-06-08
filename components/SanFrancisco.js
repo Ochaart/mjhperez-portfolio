@@ -14,7 +14,7 @@ const SanFrancisco = ({ image }) => {
       opacity: 1,
       transition: {
         duration: .8,
-        delay: 1.8
+        delay: 1.2
       }
     },
   }

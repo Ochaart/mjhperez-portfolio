@@ -11,7 +11,7 @@ const techStackVariants = {
     opacity: 1,
     transition: {
       duration: .5,
-      delay: 2.4
+      delay: 1.5
     }
   }
 }

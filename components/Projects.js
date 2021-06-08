@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import ParticleBackground from './ParticleBackground';
-import { motion, useAnimation } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import styles from '../styles/Projects.module.css'
 
@@ -49,16 +49,29 @@ const projectVariants = {
     }
   },
   hover: {
-    border: "8px solid #800000",
-    opacity: .5,
+    scale: 1.05,
+    opacity: .2,
     transition: {
-      duration: .3,
+      stiffness: 120,
+    }
+  },
+  addBorder: {
+    border: "10px solid #800000",
+    backgroundColor: "rgba(0,0,0,0.8)",
+
+  },
+  opacity: {
+    transition: {
+      stiffness: 150,
     }
   }
 }
 
 
 const Projects = () => {
+  const [catWalkHover, setCatWalkHover] = useState(false);
+  const [stitchHover, setStitchHover] = useState(false);
+  const [lazyChefHover, setLazyChefHover] = useState(false);
   return (
     <InView threshold={.60} triggerOnce={true}>
       {({ inView, ref }) => (
@@ -74,13 +87,29 @@ const Projects = () => {
           <motion.div className={styles.container}
             variants={projectVariants}
             initial="start"
-            whileHover="hover"
             animate={inView ? "catWalkEnd" : "start"}
+            whileHover="addBorder"
+            onHoverStart={() => setCatWalkHover(true)}
+            onHoverEnd={() => setCatWalkHover(false)}
           >
-            <Image
-              src="/catwalk.jpeg"
-              layout="fill"
-            />
+            <motion.div className={styles.coverPage}
+              animate="opacity"
+              variants={projectVariants}
+              whileHover="hover"
+            >
+              <Image
+                src="/catwalk.jpeg"
+                layout="fill"
+              />
+            </motion.div>
+              {catWalkHover && (
+                <motion.div className={styles.catWalkTitle}>
+                  <p>C A T W A L K</p>
+                  <p>E-COMMERCE PRODUCT DETAIL PAGE</p>
+                </motion.div>
+
+              )}
+
           </motion.div>
           <motion.div className={styles.container1}
             variants={projectVariants}

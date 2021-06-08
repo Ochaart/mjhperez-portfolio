@@ -6,7 +6,7 @@ const welcomeVariants = {
   hidden: { opacity: 0, y: 5 },
   visible: {
       opacity: 1, y: 0, transition: {
-          delay: 1.8,
+          delay: 1.2,
           duration: 1,
       }
   },

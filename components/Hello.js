@@ -14,7 +14,7 @@ const helloVariants = {
     color: ["#ff0000", "#FFD700", "#d3d3d3", "#FFA500"],
     transition: {
       duration: .8,
-      delay: 1
+      delay: .5
     }
   },
 }
