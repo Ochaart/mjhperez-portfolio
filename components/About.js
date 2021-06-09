@@ -79,7 +79,7 @@ const summaryVariants = {
 const About = () => {
   return (
     <section className={styles.about}>
-      <ParticleBackground />
+      {/* <ParticleBackground /> */}
       <InView threshold={.5} triggerOnce={true}>
         {({ inView, ref }) => (
           <div ref={ref} className={styles.profileContainer}>

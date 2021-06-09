@@ -39,12 +39,12 @@
   position: absolute;
   color: #ffffff;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   z-index: 1;
 }
 
 .coverTitle p:nth-child(2){
-  font-size: .7rem;
+  font-size: .8rem;
   line-height: 1.3rem;
 }
 

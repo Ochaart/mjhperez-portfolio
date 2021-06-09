@@ -4,6 +4,7 @@ import ParticleBackground from './ParticleBackground';
 import { motion, AnimatePresence } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import styles from '../styles/Projects.module.css'
+import Gamer from './Gamer'
 
 const projectVariants = {
   start: {
@@ -76,7 +77,7 @@ const Projects = () => {
     <InView threshold={.60} triggerOnce={true}>
       {({ inView, ref }) => (
         <section ref={ref} className={styles.projects}>
-          <ParticleBackground />
+          {/* <ParticleBackground /> */}
           <motion.div className={styles.title}
             variants={projectVariants}
             initial="titleStart"
@@ -162,6 +163,7 @@ const Projects = () => {
 
             )}
           </motion.div>
+          <Gamer />
         </section>
       )}
     </InView>
