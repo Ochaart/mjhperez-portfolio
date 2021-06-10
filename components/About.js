@@ -19,8 +19,8 @@ const profilePicVariants = {
     height: "100%",
     boxShadow: "1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / .15)",
     transition: {
-      duration: .3,
-      delay: .5,
+      duration: .2,
+      delay: .4,
     }
   },
 }
@@ -34,15 +34,15 @@ const coverVariants = {
     opacity: 1,
     width: "100%",
     transition: {
-      duration: .4,
+      duration: .3,
     }
   },
   endSummary: {
     opacity: 1,
     width: "100%",
     transition: {
-      duration: .3,
-      delay: .3
+      duration: .2,
+      delay: .2
     }
   }
 }
@@ -56,8 +56,8 @@ const summaryContainerVariants = {
     width: "100%",
     boxShadow: "1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / .15)",
     transition: {
-      duration: .3,
-      delay: .8,
+      duration: .2,
+      delay: .7,
     }
   }
 }
@@ -71,8 +71,8 @@ const summaryVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 1.2,
-      duration: .5,
+      delay: 1.1,
+      duration: .4,
     }
   }
 }

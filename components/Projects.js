@@ -68,6 +68,18 @@ const projectVariants = {
   }
 }
 
+const brickWallVariants = {
+  start: {
+    opacity: 0,
+  },
+  end: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: "easeInOut"
+    }
+  }
+}
 
 const Projects = () => {
   const [catWalkHover, setCatWalkHover] = useState(false);
@@ -163,7 +175,25 @@ const Projects = () => {
 
             )}
           </motion.div>
-          <Gamer />
+          {/* <motion.div className={styles.brickwall}
+            variants={brickWallVariants}
+            initial="start"
+            animate={inView ? "end" : "start"}
+          >
+            <Image
+              src="/brickwall.png"
+              layout="fill"
+            />
+          </motion.div>
+          <Gamer inView={inView} /> */}
+          <motion.div className={styles.quote}>
+            <p>
+              “Imagination is the beginning of creation. You imagine what you desire, you will what you imagine, and at last, you create what you will.”
+            </p>
+            <p>
+              – George Bernard Shaw
+            </p>
+          </motion.div>
         </section>
       )}
     </InView>
