@@ -71,12 +71,19 @@
 
 .quote {
   position: absolute;
-  top: 32vh;
+  top: 29vh;
   left: 39vw;
   width: 18vw;
   line-height: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .quote p {
   text-shadow: 1.5px 2px rgb(0 0 0 / 20%);
+  text-align: justify
+}
+
+.quote p:nth-child(2) {
+  margin-top: 1.5vh;
+  text-align: right;
 }

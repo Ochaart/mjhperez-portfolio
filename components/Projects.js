@@ -68,15 +68,18 @@ const projectVariants = {
   }
 }
 
-const brickWallVariants = {
+const quoteVariants = {
   start: {
     opacity: 0,
+    y: "1vh",
   },
   end: {
     opacity: 1,
+    y: "0vh",
     transition: {
-      duration: 1,
-      ease: "easeInOut"
+      duration: .5,
+      delay: .6,
+      // ease: "easeInOut"
     }
   }
 }
@@ -186,7 +189,11 @@ const Projects = () => {
             />
           </motion.div>
           <Gamer inView={inView} /> */}
-          <motion.div className={styles.quote}>
+          <motion.div className={styles.quote}
+            variants={quoteVariants}
+            initial="start"
+            animate={inView ? "end" : "start"}
+          >
             <p>
               “Imagination is the beginning of creation. You imagine what you desire, you will what you imagine, and at last, you create what you will.”
             </p>
