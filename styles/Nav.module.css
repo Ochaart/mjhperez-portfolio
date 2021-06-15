@@ -16,7 +16,7 @@
 
 .nav {
   display: flex;
-  width: 99vw;
+  width: 99.2vw;
   position: fixed;
   top: 0;
   z-index: 10000;
@@ -25,7 +25,6 @@
   font-size: .8rem;
   font-family: Cerebri,Helvetica,Arial,sans-serif;
   /* color:#000; */
-
 }
 
 .man {

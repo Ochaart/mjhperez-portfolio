@@ -78,17 +78,18 @@
 .technologies {
   position: absolute;
   z-index: 1;
-  top: 30vh;
+  top: 32vh;
   left: 20.3vw;
   font-weight: bold;
   font-size: 1.2rem;
+  /* margin-top: 1vh; */
 }
 
 .techBody {
   position: absolute;
   z-index: 1;
   left: 5.5vw;
-  top: 34.5vh;
+  top: 36.5vh;
   width: 40vw;
   display: flex;
   flex-flow: column;

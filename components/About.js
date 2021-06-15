@@ -78,7 +78,7 @@ const summaryVariants = {
 }
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       {/* <ParticleBackground /> */}
       <InView threshold={.5} triggerOnce={true}>
         {({ inView, ref }) => (
@@ -125,7 +125,7 @@ const About = () => {
                </p>
                 <br />
                 <p>
-                  What made me get into programming? Honestly, having the power in your hands to develop and turn ideas into realites and the ability to reach so much people at your finger tips, was simply imposible to resist!
+                  What made me get into programming? Honestly, having the power in your hands to develop and turn ideas into realites and the ability to reach so much people at your finger tips, it was simply imposible to resist!
                </p>
                 <br />
                 <p>

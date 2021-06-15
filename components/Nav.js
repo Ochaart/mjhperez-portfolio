@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react'
 
 let navigationVariants = {
   start: {
-    y: 0,
+    // y: 0,
     background: "#FFFFFF",
     boxShadow: "-0.5px 2px 7px 2px #ededed",
     opacity: [0, 1],
@@ -15,10 +15,10 @@ let navigationVariants = {
     }
   },
   end: {
-    y: "-1vh",
+    // y: "-1vh",
     background: "#FFFFFF",
     boxShadow: "-0.5px 2px 7px 2px #ededed",
-    paddingBottom: "1vh",
+    // paddingBottom: "1vh",
     opacity: 1,
     transition: {
       duration: .5,
@@ -49,7 +49,7 @@ const Nav = ({ inView }) => {
       className={navStyles.nav}>
       <ul className={navStyles.home}>
         <li>
-          <Link href='/'>
+          <Link href="#home">
             <a>Home</a>
           </Link>
           <div className={navStyles.man}>
@@ -63,17 +63,17 @@ const Nav = ({ inView }) => {
       </ul>
       <ul className={navStyles.resources}>
         <li>
-          <Link href='/portfolio'>
-            <a>Portfolio</a>
-          </Link>
-        </li>
-        <li>
-          <Link href='/about'>
+          <Link href="#about">
             <a>About</a>
           </Link>
         </li>
         <li>
-          <Link href='/contact'>
+          <Link href="#projects">
+            <a>Projects</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="#contact">
             <a>Contact</a>
           </Link>
         </li>

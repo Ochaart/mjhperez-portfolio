@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import ParticleBackground from './ParticleBackground';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import styles from '../styles/Projects.module.css'
 import Gamer from './Gamer'
@@ -79,7 +79,6 @@ const quoteVariants = {
     transition: {
       duration: .5,
       delay: .6,
-      // ease: "easeInOut"
     }
   }
 }
@@ -91,7 +90,7 @@ const Projects = () => {
   return (
     <InView threshold={.60} triggerOnce={true}>
       {({ inView, ref }) => (
-        <section ref={ref} className={styles.projects}>
+        <section ref={ref} className={styles.projects} id="projects">
           {/* <ParticleBackground /> */}
           <motion.div className={styles.title}
             variants={projectVariants}
@@ -123,7 +122,6 @@ const Projects = () => {
                 <p>C A T W A L K</p>
                 <p>E-COMMERCE PRODUCT DETAIL PAGE</p>
               </motion.div>
-
             )}
           </motion.div>
           <motion.div className={styles.container1}
@@ -149,7 +147,6 @@ const Projects = () => {
                 <p>S T I T C H S A V E R</p>
                 <p>KNITTING &amp; STITCHING SOCIAL PLATFORM</p>
               </motion.div>
-
             )}
           </motion.div>
           <motion.div className={styles.container2}
@@ -175,20 +172,8 @@ const Projects = () => {
                 <p>L A Z Y C H E F</p>
                 <p>RECIPE AND RESTAURANT SEARCH ENGINE</p>
               </motion.div>
-
             )}
           </motion.div>
-          {/* <motion.div className={styles.brickwall}
-            variants={brickWallVariants}
-            initial="start"
-            animate={inView ? "end" : "start"}
-          >
-            <Image
-              src="/brickwall.png"
-              layout="fill"
-            />
-          </motion.div>
-          <Gamer inView={inView} /> */}
           <motion.div className={styles.quote}
             variants={quoteVariants}
             initial="start"
@@ -201,6 +186,17 @@ const Projects = () => {
               – George Bernard Shaw
             </p>
           </motion.div>
+          {/* <motion.div className={styles.brickwall}
+
+            initial="start"
+            animate={inView ? "end" : "start"}
+          >
+            <Image
+              src="/brickwall.png"
+              layout="fill"
+            />
+          </motion.div>
+          <Gamer inView={inView} /> */}
         </section>
       )}
     </InView>
