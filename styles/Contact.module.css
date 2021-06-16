@@ -67,7 +67,7 @@
   font-size: .8rem;
 }
 
-.arrows {
+.hesitate {
   position: absolute;
   top: 50vh;
   left: 24vw;
@@ -78,6 +78,12 @@
   align-items: center;
 }
 
-.arrows p:first-child {
+.hesitateText {
   font-size: .7rem;
+}
+
+.arrows {
+  display: flex;
+  width: 7vw;
+  justify-content: space-evenly;
 }

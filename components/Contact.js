@@ -64,6 +64,20 @@ const hesitateVariants = {
   },
 }
 
+const arrowVariants = {
+  start: {
+    opacity: 0,
+  },
+  end: {
+    opacity: 1,
+    transition: {
+      duration: .5,
+      delayChildren: .8,
+      staggerChildren: .1,
+    }
+  }
+}
+
 const Contact = () => {
   return (
     <InView threshold={.80} triggerOnce={true}>
@@ -89,11 +103,12 @@ const Contact = () => {
             <motion.p variants={pitchVariants}>i s &nbsp; o n e &nbsp; m o r e &nbsp; s t e p</motion.p>
             <motion.p variants={pitchVariants}>t o &nbsp; b e g i n &nbsp; o u r &nbsp; j o u r n e y</motion.p>
           </motion.div>
-          <motion.div className={styles.arrows}>
+          <motion.div className={styles.hesitate}>
             <motion.p
+              className={styles.hesitateText}
               variants={hesitateVariants}
               initial="start"
-              animate={ inView ? "end" : "start" }
+              animate={inView ? "end" : "start"}
             >
               <motion.span
                 variants={hesitateVariants}
@@ -135,9 +150,21 @@ const Contact = () => {
                 variants={hesitateVariants}
               >E </motion.span>
             </motion.p>
-            <motion.p>→</motion.p>
-            <motion.p>→</motion.p>
-            <motion.p>→</motion.p>
+            <motion.div className={styles.arrows}
+              variants={arrowVariants}
+              initial="start"
+              animate={inView ? "end" : "start"}
+            >
+              <motion.p
+                variants={arrowVariants}
+              >→</motion.p>
+              <motion.p
+                variants={arrowVariants}
+              >→</motion.p>
+              <motion.p
+                variants={arrowVariants}
+              >→</motion.p>
+            </motion.div>
           </motion.div>
           <a href="tel:+14156060253">
             <motion.div className={styles.phone}
@@ -161,7 +188,7 @@ const Contact = () => {
               <p>m j h p e r e z @ g m a i l . c o m</p>
             </motion.div>
           </a>
-          <a href="/M.Perez.pdf" download="M.P">
+          <a href="/MPerez.pdf" download="MPerez">
             <motion.div className={styles.resume}
               whileHover={hoverEffect}
               variants={contactVariants}
@@ -169,7 +196,7 @@ const Contact = () => {
               animate={inView ? "end" : "start"}
             >
               <p>R E S U M E</p>
-              <p>M . P E R E Z . P D F</p>
+              <p>M P E R E Z . P D F</p>
             </motion.div>
           </a>
           <motion.div className={styles.links}

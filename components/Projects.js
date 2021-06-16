@@ -99,6 +99,7 @@ const Projects = () => {
           >
             P R O J E C T S
           </motion.div>
+          <a href="https://github.com/Tranquil-Tucans/catwalk" target="_blank">
           <motion.div className={styles.container}
             variants={projectVariants}
             initial="start"
@@ -124,6 +125,8 @@ const Projects = () => {
               </motion.div>
             )}
           </motion.div>
+          </a>
+          <a href="https://github.com/Crafty-Caribbean/stitchSaver" target="_blank">
           <motion.div className={styles.container1}
             variants={projectVariants}
             initial="start"
@@ -149,6 +152,8 @@ const Projects = () => {
               </motion.div>
             )}
           </motion.div>
+          </a>
+          <a href="https://github.com/Ochaart/lazychef" target="_blank">
           <motion.div className={styles.container2}
             variants={projectVariants}
             initial="start"
@@ -174,6 +179,7 @@ const Projects = () => {
               </motion.div>
             )}
           </motion.div>
+          </a>
           <motion.div className={styles.quote}
             variants={quoteVariants}
             initial="start"
