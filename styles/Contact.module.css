@@ -54,17 +54,17 @@
 
 .phone {
   top: 20vh;
-  left: 55vw;
+  left: 58vw;
 }
 
 .email {
   top: 35vh;
-  left: 73vw;
+  left: 76vw;
 }
 
 .resume {
-  top: 46vh;
-  left: 55vw;
+  top: 48vh;
+  left: 53vw;
 }
 
 .email p, .phone p, .resume p {

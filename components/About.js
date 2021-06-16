@@ -71,7 +71,7 @@ const summaryVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 1.1,
+      delay: .8,
       duration: .4,
     }
   }
