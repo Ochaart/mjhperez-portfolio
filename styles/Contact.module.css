@@ -17,15 +17,6 @@
   bottom: 0;
 }
 
-.line {
-  position: absolute;
-  background-color: #d3d3d3;
-  bottom: 30vh;
-  left: 52vw;
-  width: 40vw;
-  height: .2vh;
-}
-
 .links {
   position: absolute;
   display: flex;
@@ -74,4 +65,19 @@
 .phone p:nth-child(1), .email p:nth-child(1), .resume p:nth-child(1) {
   color: #d3d3d3;
   font-size: .8rem;
+}
+
+.arrows {
+  position: absolute;
+  top: 50vh;
+  left: 24vw;
+  display: flex;
+  font-size: 2rem;
+  width: 14vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrows p:first-child {
+  font-size: .7rem;
 }

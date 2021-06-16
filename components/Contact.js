@@ -50,6 +50,20 @@ const hoverEffect = {
   scale: 1.2,
 }
 
+const hesitateVariants = {
+  start: {
+    opacity: 0,
+  },
+  end: {
+    opacity: 1,
+    transition: {
+      duration: .05,
+      delayChildren: .3,
+      staggerChildren: .05
+    },
+  },
+}
+
 const Contact = () => {
   return (
     <InView threshold={.80} triggerOnce={true}>
@@ -74,6 +88,56 @@ const Contact = () => {
             <motion.p variants={pitchVariants}>A l l &nbsp; i t &nbsp; t a k e s</motion.p>
             <motion.p variants={pitchVariants}>i s &nbsp; o n e &nbsp; m o r e &nbsp; s t e p</motion.p>
             <motion.p variants={pitchVariants}>t o &nbsp; b e g i n &nbsp; o u r &nbsp; j o u r n e y</motion.p>
+          </motion.div>
+          <motion.div className={styles.arrows}>
+            <motion.p
+              variants={hesitateVariants}
+              initial="start"
+              animate={ inView ? "end" : "start" }
+            >
+              <motion.span
+                variants={hesitateVariants}
+              >D </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >O </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >N </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >' </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >T </motion.span>&nbsp;
+              <motion.span
+                variants={hesitateVariants}
+              >H </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >E </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >S </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >I </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >T </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >A </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >T </motion.span>
+              <motion.span
+                variants={hesitateVariants}
+              >E </motion.span>
+            </motion.p>
+            <motion.p>→</motion.p>
+            <motion.p>→</motion.p>
+            <motion.p>→</motion.p>
           </motion.div>
           <a href="tel:+14156060253">
             <motion.div className={styles.phone}
@@ -108,7 +172,6 @@ const Contact = () => {
               <p>M . P E R E Z . P D F</p>
             </motion.div>
           </a>
-          {/* <motion.div className={styles.line} /> */}
           <motion.div className={styles.links}
             variants={contactVariants}
             initial="start"
