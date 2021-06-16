@@ -1,0 +1,77 @@
+.brickwall {
+  position: absolute;
+  top: 56vh;
+  left: 73vw;
+  width: 17vw;
+  height: 35vh;
+}
+
+.contact {
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 30vh;
+  bottom: 0;
+}
+
+.line {
+  position: absolute;
+  background-color: #d3d3d3;
+  bottom: 30vh;
+  left: 52vw;
+  width: 40vw;
+  height: .2vh;
+}
+
+.links {
+  position: absolute;
+  display: flex;
+  width: 28vw;
+  bottom: 24vh;
+  left: 57vw;
+  justify-content: space-evenly;
+  color: #d3d3d3;
+}
+
+.pitch {
+  position: absolute;
+  top: 30vh;
+  left: 11vw;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.pitch p {
+  margin-top: 1vh;
+}
+
+.email, .phone, .resume {
+  position: absolute;
+}
+
+.phone {
+  top: 20vh;
+  left: 55vw;
+}
+
+.email {
+  top: 35vh;
+  left: 73vw;
+}
+
+.resume {
+  top: 46vh;
+  left: 55vw;
+}
+
+.email p, .phone p, .resume p {
+  margin-top: 1vh;
+}
+
+.phone p:nth-child(1), .email p:nth-child(1), .resume p:nth-child(1) {
+  color: #d3d3d3;
+  font-size: .8rem;
+}

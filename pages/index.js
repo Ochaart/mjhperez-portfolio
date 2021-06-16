@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Landing from '../components/Landing'
 import Projects from '../components/Projects'
 import About from '../components/About'
+import Contact from '../components/Contact'
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <Landing />
             <About />
             <Projects />
+            <Contact />
         </div>
     )
 }

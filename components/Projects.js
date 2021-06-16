@@ -186,17 +186,6 @@ const Projects = () => {
               – George Bernard Shaw
             </p>
           </motion.div>
-          {/* <motion.div className={styles.brickwall}
-
-            initial="start"
-            animate={inView ? "end" : "start"}
-          >
-            <Image
-              src="/brickwall.png"
-              layout="fill"
-            />
-          </motion.div>
-          <Gamer inView={inView} /> */}
         </section>
       )}
     </InView>

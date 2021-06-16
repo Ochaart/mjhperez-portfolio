@@ -4,17 +4,17 @@ import { motion } from 'framer-motion'
 
 const dotVariants = {
   start: {
-    y: -10,
+    y: "-1vh",
     opacity: [0, 0],
   },
   end: {
-    y: 0,
+    y: "0vh",
     opacity: [1, 1, 1, 0, 0, 0],
   },
 }
 const mouseVariants = {
-  start: { y: 0 },
-  end: { y: 5 },
+  start: { y: "0vh" },
+  end: { y: ".5vh" },
 }
 
 let containerVariants = {
@@ -24,7 +24,7 @@ let containerVariants = {
   end: {
     opacity: 1,
     transition: {
-      delay: 3,
+      delay: 1.5,
     }
   }
 }

@@ -19,12 +19,12 @@ const svgVariants = {
   }
 }
 
-const Gamer = ({ inView }) => {
+const Gamer = () => {
   return (
     <motion.div className={styles.gamerContainer}
       variants={svgVariants}
       initial="start"
-      animate={inView ? "end" : "start"}
+      animate="end"
     >
       <Image
         src="/gamer.jpeg"
