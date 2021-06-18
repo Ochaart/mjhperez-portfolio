@@ -5,11 +5,11 @@ import styles from '../styles/Hello.module.css';
 const helloVariants = {
   start: {
     opacity: 0,
-    x: 0,
+    x: "0vw",
   },
   end: {
     opacity: 1,
-    x: 100,
+    x: "5.5vw",
     width: "35vw",
     color: ["#ff0000", "#FFD700", "#d3d3d3", "#FFA500"],
     transition: {
@@ -22,13 +22,10 @@ const helloVariants = {
 const tvVariants = {
   start: {
     opacity: 0,
-    // width: 0,
-    // height: 0,
+
   },
   end: {
     opacity: 1,
-    // width: "45vw",
-    // height: "60vh",
     transition: {
       duration: .8,
     }

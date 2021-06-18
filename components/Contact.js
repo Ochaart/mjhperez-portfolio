@@ -57,9 +57,9 @@ const hesitateVariants = {
   end: {
     opacity: 1,
     transition: {
-      duration: .05,
+      duration: .02,
       delayChildren: .3,
-      staggerChildren: .05
+      staggerChildren: .02
     },
   },
 }
@@ -71,8 +71,8 @@ const arrowVariants = {
   end: {
     opacity: 1,
     transition: {
-      duration: .5,
-      delayChildren: .8,
+      duration: .2,
+      delayChildren: .5,
       staggerChildren: .1,
     }
   }
