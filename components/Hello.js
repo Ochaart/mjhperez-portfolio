@@ -10,7 +10,7 @@ const helloVariants = {
   end: {
     opacity: 1,
     x: "5.5vw",
-    width: "35vw",
+    width: "60vw",
     color: ["#ff0000", "#FFD700", "#d3d3d3", "#FFA500"],
     transition: {
       duration: .8,
@@ -22,7 +22,6 @@ const helloVariants = {
 const tvVariants = {
   start: {
     opacity: 0,
-
   },
   end: {
     opacity: 1,
@@ -35,13 +34,13 @@ const tvVariants = {
 const innerTvVariants = {
   start: {
     opacity: 0,
-    width: 0,
-    height: 0,
+    // width: 0,
+    // height: 0,
   },
   end: {
     opacity: 1,
-    width: "43vw",
-    height: "56vh",
+    // width: "43vw",
+    // height: "56vh",
     transition: {
       duration: .2,
     }

@@ -8,3 +8,12 @@
   overflow:hidden;
   opacity: 100%;
 }
+
+@media (max-width: 414px) {
+  .sanFrancisco {
+    height: 10vh;
+    top: 30vh;
+    left: 13vw;
+    width: 75vw;
+  }
+}

@@ -9,15 +9,6 @@
   height: 20vh;
 }
 
-@media (max-width: 1800px) {
-  .hello {
-    font-size: 8rem;
-  }
-  .box {
-
-  }
-}
-
 .box {
   height: 60vh;
   width: 45vw;
@@ -32,7 +23,6 @@
   align-items: center;
 
 }
-
 .cover {
   height: 56vh;
   width: 43vw;
@@ -40,3 +30,80 @@
   z-index: 1;
   box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 18%);
 }
+
+@media (max-width: 1800px) {
+  .hello {
+    font-size: 10rem;
+    height: 16vh;
+  }
+}
+
+@media (max-width: 1600px) {
+  .hello {
+    font-size: 7.5rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hello {
+    font-size: 7rem;
+  }
+
+}
+@media (max-width: 1300px) {
+  .hello {
+    font-size: 6.5rem;
+    height: 15vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hello {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 1100px) {
+  .hello {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .hello {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .hello {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 800px) {
+  .hello {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .hello {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .hello {
+    font-size: 3rem;
+    height: 8vh;
+    top: 21vh;
+    left: 20vw;
+  }
+  .cover {
+    height: 28vh;
+    width: 75vw;
+  }
+  .box {
+    height: 30vh;
+    top: 10vh;
+    width: 80vw;
+    left: 10vw;
+  }
+}
+

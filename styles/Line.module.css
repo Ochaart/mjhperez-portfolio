@@ -4,3 +4,9 @@
   top: 29vh;
   left: 16vw;
 }
+
+@media (max-width: 414px) {
+  .line {
+    display:none;
+  }
+}

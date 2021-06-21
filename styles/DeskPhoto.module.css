@@ -9,3 +9,12 @@
   overflow:hidden;
   /* opacity: 80%; */
 }
+
+@media (max-width: 414px) {
+  .deskPhoto {
+    width: 73vw;
+    height: 35vh;
+    top: 60vh;
+    left: 10vw;
+  }
+}

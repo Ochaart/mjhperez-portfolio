@@ -41,3 +41,12 @@
 .nav a:hover {
   color: skyblue;
 }
+
+@media (max-width: 414px) {
+  .home {
+    padding-left: 8vw;
+  }
+  .man {
+    padding-left: 2vw;
+  }
+}

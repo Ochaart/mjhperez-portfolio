@@ -19,7 +19,13 @@
   /* background:lightgray; */
   position: relative;
   width: 1.2rem;
-  height: 1.8rem;
+  height: 1.9rem;
   border-radius: 10rem;
   border: 1px solid #000;
 }
+
+/* @media (max-width: 375px) {
+  .scrollWrapper, .mouse {
+    display: none;
+  }
+} */

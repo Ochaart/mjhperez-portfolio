@@ -19,7 +19,7 @@ const Welcome = () => {
       initial="hidden"
       animate="visible"
       variants={welcomeVariants}>
-      I'm Mikey! A software engineer from San Francisco. <br />
+      I'm Mikey! A software engineer from San Francisco. <br/>
       Welcome to my portfolio !
     </motion.div>
   )

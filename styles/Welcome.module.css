@@ -5,3 +5,16 @@
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
+
+@media (max-width: 414px) {
+  .welcome {
+    top: 45vh;
+    font-size: 1.2rem;
+    left: 15vw;
+    width: 80vw;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+}
+

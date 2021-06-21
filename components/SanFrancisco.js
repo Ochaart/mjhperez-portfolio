@@ -7,10 +7,8 @@ const SanFrancisco = ({ image }) => {
   const photoVariants = {
     start: {
       opacity: 0,
-      // y: 10,
     },
     end: {
-      // y: 0,
       opacity: 1,
       transition: {
         duration: .8,
