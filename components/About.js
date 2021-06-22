@@ -96,9 +96,7 @@ const About = () => {
               <Image
                 src="/profile.jpeg"
                 alt="Picture of author"
-                width={450}
-                height={590}
-                layout="fixed"
+                layout="fill"
               />
             </motion.div>
           </div>

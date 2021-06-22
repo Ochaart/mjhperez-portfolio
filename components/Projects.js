@@ -88,7 +88,7 @@ const Projects = () => {
   const [stitchHover, setStitchHover] = useState(false);
   const [lazyChefHover, setLazyChefHover] = useState(false);
   return (
-    <InView threshold={.60} triggerOnce={true}>
+    <InView threshold={.40} triggerOnce={true}>
       {({ inView, ref }) => (
         <section ref={ref} className={styles.projects} id="projects">
           {/* <ParticleBackground /> */}
@@ -100,85 +100,134 @@ const Projects = () => {
             P R O J E C T S
           </motion.div>
           <a href="https://github.com/Tranquil-Tucans/catwalk" target="_blank">
-          <motion.div className={styles.container}
-            variants={projectVariants}
-            initial="start"
-            animate={inView ? "catWalkEnd" : "start"}
-            whileHover="addBorder"
-            onHoverStart={() => setCatWalkHover(true)}
-            onHoverEnd={() => setCatWalkHover(false)}
-          >
-            <motion.div className={styles.coverPage}
-              animate="opacity"
+            <motion.div className={styles.catWalk}
               variants={projectVariants}
-              whileHover="hover"
+              initial="start"
+              animate={inView ? "catWalkEnd" : "start"}
+              whileHover="addBorder"
+              onHoverStart={() => setCatWalkHover(true)}
+              onHoverEnd={() => setCatWalkHover(false)}
             >
-              <Image
-                src="/catwalk.jpeg"
-                layout="fill"
-              />
-            </motion.div>
-            {catWalkHover && (
-              <motion.div className={styles.coverTitle}>
-                <p>C A T W A L K</p>
-                <p>E-COMMERCE PRODUCT DETAIL PAGE</p>
+              <motion.div className={styles.coverPage}
+                animate="opacity"
+                variants={projectVariants}
+                whileHover="hover"
+              >
+                <Image
+                  src="/catwalk.jpeg"
+                  layout="fill"
+                />
               </motion.div>
-            )}
-          </motion.div>
+              {catWalkHover && (
+                <motion.div className={styles.coverTitle}>
+                  <p>C A T W A L K</p>
+                  <p>E-COMMERCE PRODUCT DETAIL PAGE</p>
+                </motion.div>
+              )}
+            </motion.div>
+            <div className={styles.catWalk2}
+
+            >
+              <div className={styles.coverPage2}
+              >
+                <Image
+                  src="/catwalk.jpeg"
+                  layout="fill"
+                />
+              </div>
+              {inView && (
+                <div className={styles.coverTitle}>
+                  <p>C A T W A L K</p>
+                  <p>E-COMMERCE PRODUCT DETAIL PAGE</p>
+                </div>
+              )}
+            </div>
           </a>
           <a href="https://github.com/Crafty-Caribbean/stitchSaver" target="_blank">
-          <motion.div className={styles.container1}
-            variants={projectVariants}
-            initial="start"
-            whileHover="addBorder"
-            animate={inView ? "stitchEnd" : "start"}
-            onHoverStart={() => setStitchHover(true)}
-            onHoverEnd={() => setStitchHover(false)}
-          >
-            <motion.div className={styles.coverPage}
-              animate="opacity"
+            <motion.div className={styles.stitchSaver}
               variants={projectVariants}
-              whileHover="hover"
+              initial="start"
+              whileHover="addBorder"
+              animate={inView ? "stitchEnd" : "start"}
+              onHoverStart={() => setStitchHover(true)}
+              onHoverEnd={() => setStitchHover(false)}
             >
-              <Image
-                src="/stitchSaver.jpeg"
-                layout="fill"
-              />
-            </motion.div>
-            {stitchHover && (
-              <motion.div className={styles.coverTitle}>
-                <p>S T I T C H S A V E R</p>
-                <p>KNITTING &amp; STITCHING SOCIAL PLATFORM</p>
+              <motion.div className={styles.coverPage}
+                animate="opacity"
+                variants={projectVariants}
+                whileHover="hover"
+              >
+                <Image
+                  src="/stitchSaver.jpeg"
+                  layout="fill"
+                />
               </motion.div>
-            )}
-          </motion.div>
+              {stitchHover && (
+                <motion.div className={styles.coverTitle}>
+                  <p>S T I T C H S A V E R</p>
+                  <p>KNITTING &amp; STITCHING SOCIAL PLATFORM</p>
+                </motion.div>
+              )}
+            </motion.div>
+            <div className={styles.stitchSaver2}
+            >
+              <div className={styles.coverPage2}
+              >
+                <Image
+                  src="/stitchSaver.jpeg"
+                  layout="fill"
+                />
+              </div>
+              {inView && (
+                <div className={styles.coverTitle2}>
+                  <p>S T I T C H S A V E R</p>
+                  <p>KNITTING &amp; STITCHING SOCIAL PLATFORM</p>
+                </div>
+              )}
+            </div>
           </a>
           <a href="https://github.com/Ochaart/lazychef" target="_blank">
-          <motion.div className={styles.container2}
-            variants={projectVariants}
-            initial="start"
-            whileHover="addBorder"
-            animate={inView ? "lazyChef" : "start"}
-            onHoverStart={() => setLazyChefHover(true)}
-            onHoverEnd={() => setLazyChefHover(false)}
-          >
-            <motion.div className={styles.coverPage}
-              animate="opacity"
+            <motion.div className={styles.lazyChef}
               variants={projectVariants}
-              whileHover="hover"
+              initial="start"
+              whileHover="addBorder"
+              animate={inView ? "lazyChef" : "start"}
+              onHoverStart={() => setLazyChefHover(true)}
+              onHoverEnd={() => setLazyChefHover(false)}
             >
-              <Image
-                src="/lazyChef.jpeg"
-                layout="fill"
-              />
-            </motion.div>
-            {lazyChefHover && (
-              <motion.div className={styles.coverTitle}>
-                <p>L A Z Y C H E F</p>
-                <p>RECIPE AND RESTAURANT SEARCH ENGINE</p>
+              <motion.div className={styles.coverPage}
+                animate="opacity"
+                variants={projectVariants}
+                whileHover="hover"
+              >
+                <Image
+                  src="/lazyChef.jpeg"
+                  layout="fill"
+                />
               </motion.div>
-            )}
-          </motion.div>
+              {lazyChefHover && (
+                <motion.div className={styles.coverTitle}>
+                  <p>L A Z Y C H E F</p>
+                  <p>RECIPE AND RESTAURANT SEARCH ENGINE</p>
+                </motion.div>
+              )}
+            </motion.div>
+            <div className={styles.lazyChef2}
+            >
+              <div className={styles.coverPage2}
+              >
+                <Image
+                  src="/lazyChef.jpeg"
+                  layout="fill"
+                />
+              </div>
+              {inView && (
+                <div className={styles.coverTitle2}>
+                  <p>L A Z Y C H E F</p>
+                  <p>RECIPE AND RESTAURANT SEARCH ENGINE</p>
+                </div>
+              )}
+            </div>
           </a>
           <motion.div className={styles.quote}
             variants={quoteVariants}

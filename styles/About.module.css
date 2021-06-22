@@ -1,5 +1,7 @@
 .about {
   position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .profileContainer {
@@ -15,7 +17,7 @@
   width: 23vw;
   position: absolute;
   overflow: hidden;
-  background: black;
+  /* background: black; */
 }
 
 .profileCover {
@@ -24,6 +26,8 @@
   width: 100%;
   position: absolute;
 }
+
+
 
 .summaryContainer {
   position: absolute;
@@ -105,5 +109,48 @@
 .techBody p:nth-child(odd) {
   font-weight: bold;
   margin-top: .5vh
+}
 
+@media (max-width: 414px) {
+  .about {
+    height: 140vh;
+  }
+  .profileContainer, .imageContainer, .profileCover {
+    height: 45vh;
+    width: 37vh;
+    left: 5vw;
+    top: 4vh;
+    /* border-radius: 50%; */
+    /* z-index: 1; */
+  }
+  .summaryContainer, .summaryCover, .summary {
+    width: 80vw;
+    left: 5vw;
+    height: 86vh;
+    top: 25vh;
+  }
+  .title {
+    left: 23vw;
+    top: 28vh;
+  }
+  .body, .body p {
+    width: 70vw;
+  }
+  .body {
+    top: 33vh;
+    left: 10vw;
+    font-size: .7rem;
+  }
+  .technologies {
+    top: 68vh;
+    left: 19vw;
+  }
+  .techBody {
+    width: 70vw;
+    top: 72vh;
+    left: 10vw;
+  }
+  .techBody p {
+    font-size: .7rem;
+  }
 }

@@ -1,4 +1,4 @@
-.container, .container1, .container2 {
+.catWalk, .stitchSaver, .lazyChef {
   box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 20%);
   z-index: 1;
   overflow: hidden;
@@ -9,20 +9,29 @@
   position: absolute;
   cursor: pointer;
 }
+.catWalk2, .stitchSaver2, .lazyChef2 {
+  box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 20%);
+  z-index: 1;
+  overflow: hidden;
+  border: 10px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.container {
+.catWalk {
   height: 45vh;
   width: 26vw;
   top: 30vh;
   left: 34vw;
 }
-.container1 {
+.stitchSaver {
   height: 40vh;
   width: 30vw;
   top: 30vh;
   left: 34vw;
 }
-.container2 {
+.lazyChef {
   height: 40vh;
   width: 32vw;
   top: 30vh;
@@ -51,6 +60,8 @@
 
 .projects {
   position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .title {
@@ -79,4 +90,69 @@
 .quote p:nth-child(2) {
   margin-top: 1.5vh;
   text-align: right;
+}
+
+.catWalk2, .coverPage2, .lazyChef2, .coverTitle2, .stitchSaver2 {
+  display: none;
+}
+
+.catWalk2 {
+  height: 45vh;
+  width: 26vw;
+  top: 30vh;
+  left: 34vw;
+}
+
+.coverPage2 {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+}
+
+.coverTitle2 {
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4rem;
+  z-index: 1;
+}
+
+@media (max-width: 414px) {
+  .projects {
+    height: 200vh;
+  }
+  .lazyChef, .stitchSaver, .catWalk, .coverPage {
+    display: none;
+  }
+  .title {
+    top: 10vh;
+    left: 11vw;
+  }
+  .quote {
+    width: 75vw;
+    left: 11vw;
+    top: 18vh;
+  }
+  .catWalk2, .coverPage2, .coverTitle2, .stitchSaver2, .lazyChef2 {
+    display: block;
+    position: absolute;
+  }
+  .catWalk2 {
+    width: 85vw;
+    left: 7vw;
+    top: 40vh;
+  }
+  .stitchSaver2 {
+    width: 85vw;
+    top: 90vh;
+    left: 7vw;
+    height: 40vh;
+  }
+  .lazyChef2 {
+    width: 85vw;
+    top: 135vh;
+    height: 40vh;
+    left: 7vw;
+  }
 }

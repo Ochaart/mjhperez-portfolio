@@ -10,12 +10,11 @@
 
 .screen section {
     flex-shrink: 0;
+}
+
+.home {
+    position: relative;
     width: 100%;
     height: 100vh;
 }
-
-.container {
-    position: relative;
-}
-
 

@@ -21,7 +21,7 @@ const Landing = () => {
   return (
     <InView threshold={1}>
       {({ inView, ref, entry }) => (
-        <section ref={ref} className={styles.container} id="home">
+        <section ref={ref} className={styles.home} id="home">
           {/* <ParticleBackground /> */}
           <SanFrancisco />
           <DeskPhoto />
