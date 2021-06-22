@@ -117,7 +117,7 @@
   }
   .profileContainer, .imageContainer, .profileCover {
     height: 45vh;
-    width: 37vh;
+    width: 40vh;
     left: 5vw;
     top: 4vh;
     /* border-radius: 50%; */
@@ -126,7 +126,7 @@
   .summaryContainer, .summaryCover, .summary {
     width: 80vw;
     left: 5vw;
-    height: 86vh;
+    height: 88vh;
     top: 25vh;
   }
   .title {
@@ -142,12 +142,12 @@
     font-size: .7rem;
   }
   .technologies {
-    top: 68vh;
+    top: 70vh;
     left: 19vw;
   }
   .techBody {
     width: 70vw;
-    top: 72vh;
+    top: 76vh;
     left: 10vw;
   }
   .techBody p {
