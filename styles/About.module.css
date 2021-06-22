@@ -126,7 +126,7 @@
   .summaryContainer, .summaryCover, .summary {
     width: 80vw;
     left: 5vw;
-    height: 88vh;
+    height: 90vh;
     top: 25vh;
   }
   .title {
@@ -142,7 +142,7 @@
     font-size: .7rem;
   }
   .technologies {
-    top: 70vh;
+    top: 71vh;
     left: 19vw;
   }
   .techBody {
