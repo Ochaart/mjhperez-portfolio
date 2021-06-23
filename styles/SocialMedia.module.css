@@ -8,3 +8,9 @@
   left: 3vw;
   height: 15vh;
 }
+
+@media (max-width: 414px) {
+  .container {
+    display: none;
+  }
+}

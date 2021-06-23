@@ -24,8 +24,8 @@
   border: 1px solid #000;
 }
 
-/* @media (max-width: 375px) {
+@media (max-width: 414px) {
   .scrollWrapper, .mouse {
     display: none;
   }
-} */
+}
