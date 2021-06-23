@@ -90,9 +90,9 @@
 .techBody {
   position: absolute;
   z-index: 1;
-  left: 5.5vw;
+  left: 3.5vw;
   top: 36.5vh;
-  width: 40vw;
+  width: 45vw;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -111,7 +111,7 @@
 
 @media (max-width: 414px) {
   .about {
-    height: 140vh;
+    height: 1200px;
   }
   .profileContainer, .imageContainer, .profileCover {
     height: 45vh;
@@ -124,29 +124,33 @@
   .summaryContainer, .summaryCover, .summary {
     width: 80vw;
     left: 5vw;
-    height: 90vh;
+    height: 750px;
     top: 25vh;
   }
+  .title, .body, .technologies, .techBody {
+    position:static;
+  }
+  .summary {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    max-height: 750px;
+  }
   .title {
-    left: 23vw;
-    top: 28vh;
+    margin-bottom: 20px
   }
   .body, .body p {
     width: 70vw;
   }
   .body {
-    top: 33vh;
-    left: 10vw;
     font-size: .7rem;
   }
   .technologies {
-    top: 71vh;
-    left: 19vw;
+    margin: 20px 0
   }
   .techBody {
     width: 70vw;
-    top: 76vh;
-    left: 10vw;
   }
   .techBody p {
     font-size: .7rem;

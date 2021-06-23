@@ -1,5 +1,5 @@
 .hello {
-  position: absolute;
+  /* position: absolute; */
   top: 33vh;
   left: 50vw;
   color: #d3d3d3;
@@ -29,6 +29,9 @@
   background: #FFFFFF;
   z-index: 1;
   box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 18%);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 @media (max-width: 1800px) {
@@ -91,18 +94,17 @@
 @media (max-width: 414px) {
   .hello {
     font-size: 3rem;
-    height: 8vh;
-    top: 21vh;
-    left: 20vw;
+    height: 50px;
+    padding-left: 30px;
   }
   .cover {
-    height: 28vh;
-    width: 75vw;
+    height: 235px;
+    width: 290px;
   }
   .box {
-    height: 30vh;
+    height: 255px;
     top: 10vh;
-    width: 80vw;
+    width: 310px;
     left: 10vw;
   }
 }

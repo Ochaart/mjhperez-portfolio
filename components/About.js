@@ -106,61 +106,6 @@ const About = () => {
         {({ inView, ref }) => {
           return (
             <div ref={ref} className={styles.summaryContainer}>
-              <motion.div className={styles.title}
-                variants={summaryVariants}
-                initial="start"
-                animate={inView ? "end" : "start"}
-              >
-                A B O U T &nbsp; M I K E Y
-             </motion.div>
-              <motion.div className={styles.body}
-                variants={summaryVariants}
-                initial="start"
-                animate={inView ? "end" : "start"}
-              >
-                <p>
-                  My background is in the Hospitality Industry. I've always enjoyed traveling the world and meeting people. I thrive in the social and team environments.
-               </p>
-                <br />
-                <p>
-                  What made me get into programming? Honestly, having the power in your hands to develop and turn ideas into realities and the ability to reach so much people at your finger tips, it was simply impossible to resist!
-               </p>
-                <br />
-                <p>
-                  With that being said, I'd love to help bring your dreams into reality!
-               </p>
-              </motion.div>
-              <motion.div className={styles.technologies}
-                variants={summaryVariants}
-                initial="start"
-                animate={inView ? "end" : "start"}
-              >
-                T E C H N O L O G I E S
-             </motion.div>
-              <motion.div className={styles.techBody}
-                variants={summaryVariants}
-                initial="start"
-                animate={inView ? "end" : "start"}
-              >
-                <p>
-                  Front End
-                </p>
-                <p>
-                  JavaScript (ES6+) | React | jQuery | Redux |  HTML5 | CSS3 | Next.js | framer-motion | Sass | Styled Components
-                </p>
-                <p>
-                  Back End
-                </p>
-                <p>
-                  MySQL | MongoDB | Mongoose | Node.js | Express | Axios | PostgreSQL | REST API | Nginx
-                </p>
-                <p>
-                  DevOps &amp; Testing
-                </p>
-                <p>
-                  AWS EC2 | S3 | Docker | Git | Babel | Webpack | Jest | Enzyme | Mocha | Chai | Loader.io | K6 | New Relic
-                </p>
-              </motion.div>
               <motion.div className={styles.summaryCover}
                 variants={coverVariants}
                 initial="start"
@@ -172,6 +117,61 @@ const About = () => {
                 initial="start"
                 animate={inView ? "end" : "start"}
               >
+                <motion.div className={styles.title}
+                  variants={summaryVariants}
+                  initial="start"
+                  animate={inView ? "end" : "start"}
+                >
+                  A B O U T &nbsp; M I K E Y
+                </motion.div>
+                <motion.div className={styles.body}
+                  variants={summaryVariants}
+                  initial="start"
+                  animate={inView ? "end" : "start"}
+                >
+                  <p>
+                    My background is in the Hospitality Industry. I've always enjoyed traveling the world and meeting people. I thrive in the social and team environments.
+                  </p>
+                  <br />
+                  <p>
+                    What made me get into programming? Honestly, having the power in your hands to develop and turn ideas into realities and the ability to reach so much people at your finger tips, it was simply impossible to resist!
+                  </p>
+                  <br />
+                  <p>
+                    With that being said, I'd love to help bring your dreams into reality!
+                  </p>
+                </motion.div>
+                <motion.div className={styles.technologies}
+                  variants={summaryVariants}
+                  initial="start"
+                  animate={inView ? "end" : "start"}
+                >
+                  T E C H N O L O G I E S
+                </motion.div>
+                <motion.div className={styles.techBody}
+                  variants={summaryVariants}
+                  initial="start"
+                  animate={inView ? "end" : "start"}
+                >
+                  <p>
+                    Front End
+                  </p>
+                  <p>
+                    JavaScript (ES6+) | React | jQuery | Redux |  HTML5 | CSS3 | Next.js | framer-motion | Sass | Styled Components
+                  </p>
+                  <p>
+                    Back End
+                  </p>
+                  <p>
+                    MySQL | MongoDB | Mongoose | Node.js | Express | Axios | PostgreSQL | REST API | Nginx
+                  </p>
+                  <p>
+                    DevOps &amp; Testing
+                  </p>
+                  <p>
+                    AWS EC2 | S3 | Docker | Git | Babel | Webpack | Jest | Enzyme | Mocha | Chai | Loader.io | K6 | New Relic
+                  </p>
+                </motion.div>
               </motion.div>
 
             </div>

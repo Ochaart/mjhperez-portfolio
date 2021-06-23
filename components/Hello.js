@@ -9,7 +9,7 @@ const helloVariants = {
   },
   end: {
     opacity: 1,
-    x: "5.5vw",
+    x: "4.5vw",
     width: "60vw",
     color: ["#ff0000", "#FFD700", "#d3d3d3", "#FFA500"],
     transition: {
@@ -59,16 +59,17 @@ const Hello = () => {
           variants={innerTvVariants}
           initial="start"
           animate="end"
-          className={styles.cover} />
+          className={styles.cover} >
+          <motion.div
+            variants={helloVariants}
+            initial="start"
+            animate="end"
+            className={styles.hello}
+          >
+            H E L L O
+          </motion.div>
+        </motion.div>
       </motion.div>
-      <motion.div
-        variants={helloVariants}
-        initial="start"
-        animate="end"
-        className={styles.hello}
-      >
-        H E L L O
-    </motion.div>
     </>
   )
 }
