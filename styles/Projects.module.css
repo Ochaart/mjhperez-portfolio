@@ -127,7 +127,7 @@
 
 @media (max-width: 414px) {
   .projects {
-    height: 1210px;
+    height: 1230px;
   }
   .lazyChef, .stitchSaver, .catWalk, .coverPage {
     display: none;
