@@ -127,7 +127,7 @@
 
 @media (max-width: 414px) {
   .projects {
-    height: 1400px;
+    height: 1200px;
   }
   .lazyChef, .stitchSaver, .catWalk, .coverPage {
     display: none;
@@ -147,22 +147,24 @@
     flex-direction: column;
     position: absolute;
   }
+
+  .catWalk2, .stitchSaver2, .lazyChef2 {
+    height: 290px;
+  }
+
   .catWalk2 {
     width: 85vw;
     left: 7vw;
-    top: 40vh;
+    top: 300px;
   }
   .stitchSaver2 {
     width: 85vw;
-    top: 90vh;
+    top: 630px;
     left: 7vw;
-    height: 40vh;
   }
   .lazyChef2 {
     width: 85vw;
-    top: 135vh;
-    height: 40vh;
+    top: 960px;
     left: 7vw;
   }
-
 }
