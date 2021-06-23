@@ -29,6 +29,7 @@
 
 .man {
   padding-left: .3vw;
+  cursor: pointer;
 }
 
 .home {
