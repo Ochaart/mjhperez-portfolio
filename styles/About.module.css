@@ -111,18 +111,18 @@
 
 @media (max-width: 414px) {
   .about {
-    height: 1200px;
+    height: 1120px;
   }
   .profileContainer, .imageContainer, .profileCover {
-    height: 45vh;
-    width: 40vh;
+    height: 360px;
+    width: 310px;
     left: 5vw;
     top: 4vh;
     /* border-radius: 50%; */
     /* z-index: 1; */
   }
   .summaryContainer, .summaryCover, .summary {
-    width: 80vw;
+    width: 310px;
     left: 5vw;
     height: 750px;
     top: 25vh;

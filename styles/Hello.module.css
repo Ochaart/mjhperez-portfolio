@@ -94,7 +94,7 @@
 @media (max-width: 414px) {
   .hello {
     font-size: 3rem;
-    height: 6vh;
+    height: 8vh;
     padding-left: 8vw;
   }
   .cover {
