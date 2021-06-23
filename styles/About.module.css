@@ -114,17 +114,17 @@
     height: 140vh;
   }
   .profileContainer, .imageContainer, .profileCover {
-    height: 49vh;
-    width: 40vh;
+    height: 400px;
+    width: 318px;
     left: 5vw;
     top: 4vh;
     /* border-radius: 50%; */
     /* z-index: 1; */
   }
   .summaryContainer, .summaryCover, .summary {
-    width: 80vw;
+    width: 318px;
     left: 5vw;
-    height: 90vh;
+    height: 780px;
     top: 25vh;
   }
   .title {
@@ -141,7 +141,7 @@
   }
   .technologies {
     top: 71vh;
-    left: 19vw;
+    left: 19.5vw;
   }
   .techBody {
     width: 70vw;
