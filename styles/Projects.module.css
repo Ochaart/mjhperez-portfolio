@@ -111,11 +111,18 @@
 }
 
 .coverTitle2 {
-  position: absolute;
+  /* position: absolute; */
   color: #ffffff;
   text-align: center;
   font-size: 1.4rem;
   z-index: 1;
+  /* top: 17vh;
+  left: 10vw; */
+}
+
+.coverTitle2 p:nth-child(2) {
+  font-size: .8rem;
+  line-height: 1.3rem;
 }
 
 @media (max-width: 414px) {
@@ -135,7 +142,8 @@
     top: 18vh;
   }
   .catWalk2, .coverPage2, .coverTitle2, .stitchSaver2, .lazyChef2 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
   }
   .catWalk2 {
@@ -155,4 +163,5 @@
     height: 40vh;
     left: 7vw;
   }
+
 }

@@ -6,7 +6,7 @@
 
 .profileContainer {
   height: 60vh;
-  width: 23vw;
+  width: 25vw;
   position: absolute;
   left: 63vw;
   top: 15vh;
@@ -14,7 +14,7 @@
 
 .imageContainer {
   height: 60vh;
-  width: 23vw;
+  width: 25vw;
   position: absolute;
   overflow: hidden;
   /* background: black; */

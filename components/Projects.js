@@ -59,12 +59,28 @@ const projectVariants = {
   addBorder: {
     border: "10px solid #800000",
     backgroundColor: "rgba(0,0,0,0.8)",
-
   },
   opacity: {
     transition: {
       stiffness: 150,
     }
+  }
+}
+
+const project2Variants = {
+  start: {
+    opacity: 1,
+  },
+  hover: {
+    scale: 1.05,
+    opacity: .2,
+    transition: {
+      stiffness: 120,
+    }
+  },
+  addBorder: {
+    border: "10px solid #800000",
+    backgroundColor: "rgba(0,0,0,0.8)",
   }
 }
 
@@ -88,7 +104,7 @@ const Projects = () => {
   const [stitchHover, setStitchHover] = useState(false);
   const [lazyChefHover, setLazyChefHover] = useState(false);
   return (
-    <InView threshold={.40} triggerOnce={true}>
+    <InView threshold={.20} triggerOnce={true}>
       {({ inView, ref }) => (
         <section ref={ref} className={styles.projects} id="projects">
           {/* <ParticleBackground /> */}
@@ -125,23 +141,30 @@ const Projects = () => {
                 </motion.div>
               )}
             </motion.div>
-            <div className={styles.catWalk2}
-
-            >
-              <div className={styles.coverPage2}
-              >
-                <Image
-                  src="/catwalk.jpeg"
-                  layout="fill"
-                />
-              </div>
-              {inView && (
-                <div className={styles.coverTitle}>
-                  <p>C A T W A L K</p>
-                  <p>E-COMMERCE PRODUCT DETAIL PAGE</p>
-                </div>
+            <InView threshold={1}>
+              {({ inView, ref }) => (
+                <motion.div ref={ref} className={styles.catWalk2}
+                  variants={project2Variants}
+                  animate={inView ? "addBorder" : "start"}
+                >
+                  <motion.div className={styles.coverPage2}
+                    variants={project2Variants}
+                    animate={inView ? "hover" : "start"}
+                  >
+                    <Image
+                      src="/catwalk.jpeg"
+                      layout="fill"
+                    />
+                  </motion.div>
+                  {inView && (
+                    <motion.div className={styles.coverTitle2}>
+                      <p>C A T W A L K</p>
+                      <p>E-COMMERCE PRODUCT DETAIL PAGE</p>
+                    </motion.div>
+                  )}
+                </motion.div>
               )}
-            </div>
+            </InView>
           </a>
           <a href="https://github.com/Crafty-Caribbean/stitchSaver" target="_blank">
             <motion.div className={styles.stitchSaver}
@@ -169,22 +192,30 @@ const Projects = () => {
                 </motion.div>
               )}
             </motion.div>
-            <div className={styles.stitchSaver2}
-            >
-              <div className={styles.coverPage2}
-              >
-                <Image
-                  src="/stitchSaver.jpeg"
-                  layout="fill"
-                />
-              </div>
-              {inView && (
-                <div className={styles.coverTitle2}>
-                  <p>S T I T C H S A V E R</p>
-                  <p>KNITTING &amp; STITCHING SOCIAL PLATFORM</p>
-                </div>
+            <InView threshold={1}>
+              {({ inView, ref }) => (
+                <motion.div ref={ref} className={styles.stitchSaver2}
+                  variants={project2Variants}
+                  animate={inView ? "addBorder" : "start"}
+                >
+                  <motion.div className={styles.coverPage2}
+                    variants={project2Variants}
+                    animate={inView ? "hover" : "start"}
+                  >
+                    <Image
+                      src="/stitchSaver.jpeg"
+                      layout="fill"
+                    />
+                  </motion.div>
+                  {inView && (
+                    <motion.div className={styles.coverTitle2}>
+                      <p>S T I T C H S A V E R</p>
+                      <p>KNITTING &amp; STITCHING SOCIAL PLATFORM</p>
+                    </motion.div>
+                  )}
+                </motion.div>
               )}
-            </div>
+            </InView>
           </a>
           <a href="https://github.com/Ochaart/lazychef" target="_blank">
             <motion.div className={styles.lazyChef}
@@ -212,22 +243,30 @@ const Projects = () => {
                 </motion.div>
               )}
             </motion.div>
-            <div className={styles.lazyChef2}
-            >
-              <div className={styles.coverPage2}
-              >
-                <Image
-                  src="/lazyChef.jpeg"
-                  layout="fill"
-                />
-              </div>
-              {inView && (
-                <div className={styles.coverTitle2}>
-                  <p>L A Z Y C H E F</p>
-                  <p>RECIPE AND RESTAURANT SEARCH ENGINE</p>
-                </div>
+            <InView threshold={1}>
+              {({ inView, ref }) => (
+                <motion.div ref={ref} className={styles.lazyChef2}
+                  variants={project2Variants}
+                  animate={inView ? "addBorder" : "start"}
+                >
+                  <motion.div className={styles.coverPage2}
+                     variants={project2Variants}
+                     animate={inView ? "hover" : "start"}
+                  >
+                    <Image
+                      src="/lazyChef.jpeg"
+                      layout="fill"
+                    />
+                  </motion.div>
+                  {inView && (
+                    <motion.div className={styles.coverTitle2}>
+                      <p>L A Z Y C H E F</p>
+                      <p>RECIPE AND RESTAURANT SEARCH ENGINE</p>
+                    </motion.div>
+                  )}
+                </motion.div>
               )}
-            </div>
+            </InView>
           </a>
           <motion.div className={styles.quote}
             variants={quoteVariants}

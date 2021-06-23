@@ -52,13 +52,15 @@ const Nav = ({ inView }) => {
           <Link href="#home">
             <a>Home</a>
           </Link>
-          <div className={navStyles.man}>
-            <Image
-              src="/jumpingMan.png"
-              width={20}
-              height={20}
-            />
-          </div>
+          <Link href="#home">
+            <div className={navStyles.man}>
+              <Image
+                src="/jumpingMan.png"
+                width={20}
+                height={20}
+              />
+            </div>
+          </Link>
         </li>
       </ul>
       <ul className={navStyles.resources}>
