@@ -36,10 +36,12 @@ const pitchVariants = {
 
 const contactVariants = {
   start: {
-    opacity: 0
+    opacity: 0,
+    x: "-2vw",
   },
   end: {
     opacity: 1,
+    x: "0vw",
     transition: {
       duration: .5,
     }

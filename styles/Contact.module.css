@@ -89,3 +89,42 @@
   width: 7vw;
   justify-content: space-evenly;
 }
+
+@media (max-width: 414px) {
+  .arrows {
+    display: none;
+  }
+  .pitch {
+    top: 15vh;
+    font-size: 1.3rem;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    left: 8vw;
+    /* align-items: center; */
+  }
+  .hesitate {
+    top: 32vh;
+    width: 50vw;
+  }
+  .phone {
+    top: 42vh;
+    left: 12vw;
+  }
+  .email {
+    top: 52vh;
+    left: 12vw;
+  }
+  .resume {
+    top: 62vh;
+    left: 12vw;
+  }
+  .footer {
+    height: 10vh;
+  }
+  .links {
+    width: 90vw;
+    left: 5vw;
+    bottom: 15vh;
+  }
+}
