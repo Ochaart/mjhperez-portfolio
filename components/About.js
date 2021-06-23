@@ -123,7 +123,7 @@ const About = () => {
                </p>
                 <br />
                 <p>
-                  What made me get into programming? Honestly, having the power in your hands to develop and turn ideas into realities and the ability to reach so much people at your finger tips, it was simply imposible to resist!
+                  What made me get into programming? Honestly, having the power in your hands to develop and turn ideas into realities and the ability to reach so much people at your finger tips, it was simply impossible to resist!
                </p>
                 <br />
                 <p>
