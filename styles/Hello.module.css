@@ -94,17 +94,17 @@
 @media (max-width: 414px) {
   .hello {
     font-size: 3rem;
-    height: 50px;
-    padding-left: 30px;
+    height: 6vh;
+    padding-left: 8vw;
   }
   .cover {
-    height: 235px;
-    width: 290px;
+    height: 28vh;
+    width: 75vw;
   }
   .box {
-    height: 255px;
+    height: 30vh;
     top: 10vh;
-    width: 310px;
+    width: 80vw;
     left: 10vw;
   }
 }
