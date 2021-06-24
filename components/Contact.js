@@ -82,7 +82,7 @@ const arrowVariants = {
 
 const Contact = () => {
   return (
-    <InView threshold={.80} triggerOnce={true}>
+    <InView threshold={.60} triggerOnce={true}>
       {({ inView, ref }) => (
         <section ref={ref} className={styles.contact} id="contact">
           <motion.div className={styles.footer}
